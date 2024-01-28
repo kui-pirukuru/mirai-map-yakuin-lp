@@ -7,9 +7,10 @@ import kokuho from "../assets/bnn_kokuho_s.jpg";
 import shaho from "../assets/bnn_shaho_s.jpg";
 import yakuin from "../assets/bnn_yakuin_s.jpg";
 import contact02_tel_pc from "../assets/contact02_tel_pc.png";
+import offer_01_pc from "../assets/offer_01_pc.png";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="国保と国民年金の保険料を節減  ライフコンサルタント株式会社">
 	<main class="flex flex-col">
 		<div class="flex justify-between">
 			<div class="flex items-center">
@@ -20,11 +21,11 @@ import contact02_tel_pc from "../assets/contact02_tel_pc.png";
 			</div>
 			<div>
 				<Image
-				src="https://life-consultant-hiroshima.com/lp2208/common/img/head_tel_pc.png"
-				alt="説明文"
-				width="216"
-				height="59"
-			/>
+					src="https://life-consultant-hiroshima.com/lp2208/common/img/head_tel_pc.png"
+					alt="説明文"
+					width="216"
+					height="59"
+				/>
 			</div>
 			<div class="flex items-center">
 				<button
@@ -34,73 +35,104 @@ import contact02_tel_pc from "../assets/contact02_tel_pc.png";
 				>
 			</div>
 		</div>
-		<div class="flex justify-center gap-10 bg-[#333333] py-10">
-			<Image src={kokuho} alt="説明文" width={195}/>
-			<Image src={shaho} alt="説明文" width={195}/>
-			<Image src={yakuin} alt="説明文"  width={195}/>
+
+		<div class="border-[5px] border-[#0588AF] rounded-md py-10 px-10">
+			<div class="text-[#0088af] font-black text-center text-3xl">
+				よくあるご質問
+			</div>
+			<div class="divide-y divide-gray-100">
+				<details class="group">
+					<summary
+						class="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-medium text-secondary-900 group-open:text-primary-500"
+					>
+						<div class="font-bold">
+							<span class="text-[#FF0000] text-xl">Q</span>
+							法的に問題はありませんか？
+						</div>
+
+						<div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								stroke-width="6"
+								stroke="currentColor"
+								class="block h-5 w-5 group-open:hidden"
+							>
+								<path
+									stroke="#0588AF"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M12 4.5v15m7.5-7.5h-15"></path>
+							</svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								stroke-width="6"
+								stroke="currentColor"
+								class="hidden h-5 w-5 group-open:block"
+							>
+								<path
+									stroke="#0588AF"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19.5 12h-15"></path>
+							</svg>
+						</div>
+					</summary>
+					<div class="flex pb-4 text-secondary-500 gap-4">
+						<div class="text-[#0588AF] text-2xl font-bold pt-1">
+							A
+						</div>
+						<div class="font-sans">
+							はい、全く問題ありません。<br
+							/>各管轄省庁から全て回答を得て、通達に沿った方策ですので、心配ご無用です。
+						</div>
+					</div>
+				</details>
+				<hr class="h-0.5 my-3 bg-[#0588AF]" />
+			</div>
 		</div>
-		<div class="hs-accordion-group" data-hs-accordion-always-open>
-			<div class="hs-accordion active" id="hs-basic-always-open-heading-one">
-			  <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 hover:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400" aria-controls="hs-basic-always-open-collapse-one">
-				<svg class="hs-accordion-active:hidden block w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
-				<svg class="hs-accordion-active:block hidden w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
-				Accordion #1
-			  </button>
-			  <div id="hs-basic-always-open-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-always-open-heading-one">
-				<p class="text-gray-800 dark:text-gray-200">
-				  <em>This is the third item's accordion body.</em> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
-				</p>
-			  </div>
+		<div class="flex flex-col items-center">
+			<Image src={offer_01_pc} alt="説明文" height={167} class="absolute"/>
+			<div class="flex bg-[#E5555F] justify-center items-center w-full mt-[147px]">
+				<div class="text-[#FFD618] font-bold w-[400px] text-center">
+					<div class="text-3xl">保険料節減相談が</div>
+					<div class="text-4xl">無料！</div>
+				</div>
+				<div class="text-white w-[500px] py-20 text-sm leading-6">
+					保険料節減の無料相談は、広島県・福岡県・岡山県・山口県・大阪府・兵庫県限定です。直接面談･電話･メールなど様々な方法で、無料相談および試算を行っておりますので、ご希望の方法をお申し付けください。まずは下記より受付のご連絡をお願いいたします。
+				</div>
 			</div>
-		  
-			<div class="hs-accordion" id="hs-basic-always-open-heading-two">
-			  <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 hover:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400" aria-controls="hs-basic-always-open-collapse-two">
-				<svg class="hs-accordion-active:hidden block w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
-				<svg class="hs-accordion-active:block hidden w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
-				Accordion #2
-			  </button>
-			  <div id="hs-basic-always-open-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-always-open-heading-two">
-				<p class="text-gray-800 dark:text-gray-200">
-				  <em>This is the second item's accordion body.</em> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
-				</p>
-			  </div>
-			</div>
-		  
-			<div class="hs-accordion" id="hs-basic-always-open-heading-three">
-			  <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 hover:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400" aria-controls="hs-basic-always-open-collapse-three">
-				<svg class="hs-accordion-active:hidden block w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
-				<svg class="hs-accordion-active:block hidden w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
-				Accordion #3
-			  </button>
-			  <div id="hs-basic-always-open-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-always-open-heading-three">
-				<p class="text-gray-800 dark:text-gray-200">
-				  <em>This is the first item's accordion body.</em> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
-				</p>
-			  </div>
-			</div>
-		  </div>
+		</div>
+
 		<div class="text-black w-full text-center">
-			<div class="text-4xl">
-				無料相談・お問い合わせ<br>受付フォーム
+			<div class="text-4xl font-bold text-[#0588AF]">
+				無料相談・お問い合わせ<br />受付フォーム
 			</div>
-			<div>
-				無料相談、お問い合わせは下記フォームにご入力のうえ、<br>送信をお願いいたします。
+			<div class="text-md mt-5">
+				無料相談、お問い合わせは下記フォームにご入力のうえ、<br
+				/>送信をお願いいたします。
 			</div>
 			<div>
 				お申込み後に、自動返信メールが届きますので、内容をご確認ください。
 			</div>
 			<Image src={contact02_tel_pc} alt="説明文" />
-			<div class="text-sm font-bold text-red-500">
-				※お申込みは広島県・福岡県・岡山県・山口県・大阪府・兵庫県限定です。<br>
+			<div class="text-xs font-bold text-red-500">
+				※お申込みは広島県・福岡県・岡山県・山口県・大阪府・兵庫県限定です。<br
+				/>
 				※申し訳ありませんが、年金受給者・無職・会社従業員の方からの相談はお受けできませんのでご了承くださいませ。
 			</div>
-			<div>
-			</div>
-			<div class="text-sm font-bold text-red-500">
+			<div></div>
+			<div class="text-xs font-bold text-red-500">
 				※は入力必須項目です。
 			</div>
 		</div>
-		<div>
+		<div class="flex justify-center gap-10 bg-[#333333] py-10">
+			<Image src={shaho} alt="説明文" width={195} />
+			<Image src={yakuin} alt="説明文" width={195} />
+			<Image src={kokuho} alt="説明文" width={195} />
+		</div>
+		<div class="text-sm font-sans text-center my-5">
 			Copyright © ライフコンサルタント株式会社 All rights reserved.
 		</div>
 	</main>
