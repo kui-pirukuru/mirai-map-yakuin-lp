@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import { Image } from "astro:assets";
 import logo from "../assets/logo.png";
 import kokuho from "../assets/bnn_kokuho_s.jpg";
@@ -11,7 +10,7 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 ---
 
 <Layout title="国保と国民年金の保険料を節減  ライフコンサルタント株式会社">
-	<main class="flex flex-col">
+	<main class="flex flex-col justify-center">
 		<div class="flex justify-between">
 			<div class="flex items-center">
 				<Image src={logo} alt="説明文" width="311" />
@@ -35,7 +34,26 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 				>
 			</div>
 		</div>
+		<div class="flex flex-col py-10 items-center">
 
+
+			<div class="text-3xl font-black text-[#0088af]">費用について</div>
+			<div class="font-bold">お客様の負担額は</div>
+			<div class="text-2xl font-bold text-[#E5555F]">約<span class="text-4xl">38,000</span>円/月</div>
+			<div>のみです。</div>
+			<div class="text-sm">
+				上記負担額には、お客様ご自身とご家族の保険料や当社事務手数料など全て含まれています。
+			</div>
+			<ul class="text-xs font-bold w-[230px] leading-6 mt-4">
+				<li>導入時の契約金、導入手数料は不要！</li>
+				<li>導入後の維持管理料、更新手数料は不要！</li>
+				<li>解約費用、退会手数料は不要！</li>
+			</ul>
+			<a
+				class="text-2xl rounded-full bg-[#E5555F] text-white font-bold px-12 py-4 my-5"
+				href="#contact">無料相談のお申し込みはこちら</a
+			>
+		</div>
 		<div class="border-[5px] border-[#0588AF] rounded-md py-10 px-10">
 			<div class="text-[#0088af] font-black text-center text-3xl">
 				よくあるご質問
@@ -93,8 +111,15 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 			</div>
 		</div>
 		<div class="flex flex-col items-center">
-			<Image src={offer_01_pc} alt="説明文" height={167} class="absolute"/>
-			<div class="flex bg-[#E5555F] justify-center items-center w-full mt-[147px]">
+			<Image
+				src={offer_01_pc}
+				alt="説明文"
+				height={167}
+				class="absolute"
+			/>
+			<div
+				class="flex bg-[#E5555F] justify-center items-center w-full mt-[147px]"
+			>
 				<div class="text-[#FFD618] font-bold w-[400px] text-center">
 					<div class="text-3xl">保険料節減相談が</div>
 					<div class="text-4xl">無料！</div>
@@ -105,7 +130,7 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 			</div>
 		</div>
 
-		<div class="text-black w-full text-center">
+		<div id="contact" class="text-black w-full text-center">
 			<div class="text-4xl font-bold text-[#0588AF]">
 				無料相談・お問い合わせ<br />受付フォーム
 			</div>
@@ -140,62 +165,20 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 
 <style>
 	main {
-		margin: auto;
 		padding: 1rem;
 		/* width: 800px; */
-		max-width: calc(100% - 2rem);
-		color: black;
-		font-size: 20px;
-		line-height: 1.6;
+		/* max-width: calc(100% - 2rem); */
+		/* color: black; */
+		/* font-size: 20px; */
 	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
+	/* h1 {
 		font-size: 4rem;
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(
-			rgba(var(--accent-dark), 66%),
-			rgba(var(--accent-dark), 33%)
-		);
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+	} */
+	ul {
+		list-style: "-";
 	}
 </style>

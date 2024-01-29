@@ -2,16 +2,22 @@
 interface Props {
 	title: string;
 }
+import '@fontsource/zen-maru-gothic/300.css';
+import '@fontsource/zen-maru-gothic/400.css';
+import '@fontsource/zen-maru-gothic/500.css';
+import '@fontsource/zen-maru-gothic/700.css';
+import '@fontsource/zen-maru-gothic/900.css';
 
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
+		<!-- <meta name=”viewport” content=”width=device-width, initial-scale=1.0″> -->
+		<meta name="viewport" content="width=1280, user-scalable=yes">
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -33,11 +39,12 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: 'Zen Maru Gothic', sans-serif;
+		font-family: "Zen Maru Gothic", sans-serif;
 		background: #E9F6FD;
-		background-size: 224px;
+		/* background-size: 224px; */
+		scroll-behavior: smooth;
 	}
-	code {
+	/* code {
 		font-family:
 			Menlo,
 			Monaco,
@@ -47,5 +54,5 @@ const { title } = Astro.props;
 			Bitstream Vera Sans Mono,
 			Courier New,
 			monospace;
-	}
+	} */
 </style>

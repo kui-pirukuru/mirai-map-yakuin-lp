@@ -452,10 +452,10 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.19.12.tgz#c57c8afbb4054a3ab8317591a0b7320360b444ae"
   integrity sha512-T1QyPSDCyMXaO3pzBkF96E8xMkiRYbUEZADd29SyPGabqxMViNoii+NcK7eWJAEoU6RZyEm5lVSIjTmcdoB9HA==
 
-"@fontsource/twinkle-star@^5.0.18":
-  version "5.0.18"
-  resolved "https://registry.yarnpkg.com/@fontsource/twinkle-star/-/twinkle-star-5.0.18.tgz#69fc8640d84e2a0bf6a9ad4d58a2861b116bfd76"
-  integrity sha512-ZtzA9rP+Hej6u+KgrNXroOtGKo2H4b5vWnjkQACsIAGawY1/2S/9/wCDLurqG2BIEbuo5H7z/snGSyDsoV4m3Q==
+"@fontsource/zen-maru-gothic@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/zen-maru-gothic/-/zen-maru-gothic-5.0.17.tgz#bbe5c97d759715f13dd96c3c4e46ad8ab4fcd1f0"
+  integrity sha512-gDcSrrs8x19lcxTkMGvgSE6SVoi6lFtfqyBNIrMdtLAl/TPDB61sJgsYG9MbIdk4QVSs1woiXPlP7UxP6qT2Qw==
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
