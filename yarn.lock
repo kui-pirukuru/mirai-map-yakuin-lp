@@ -452,6 +452,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.19.12.tgz#c57c8afbb4054a3ab8317591a0b7320360b444ae"
   integrity sha512-T1QyPSDCyMXaO3pzBkF96E8xMkiRYbUEZADd29SyPGabqxMViNoii+NcK7eWJAEoU6RZyEm5lVSIjTmcdoB9HA==
 
+"@fontsource/noto-sans-jp@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/noto-sans-jp/-/noto-sans-jp-5.0.17.tgz#7a2e59a86ed6e811114016449512e75efed6bc1e"
+  integrity sha512-dwgMf7lIkCeK8JtjpzQk8HW0Hh6ACiRTiVnKXS2+8mk5wngd9mQ63B9IgCaKkmjGmmLxVQp76gFiKUzDMP+uxw==
+
 "@fontsource/zen-maru-gothic@^5.0.17":
   version "5.0.17"
   resolved "https://registry.yarnpkg.com/@fontsource/zen-maru-gothic/-/zen-maru-gothic-5.0.17.tgz#bbe5c97d759715f13dd96c3c4e46ad8ab4fcd1f0"
