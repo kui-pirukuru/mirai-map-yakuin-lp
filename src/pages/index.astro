@@ -10,7 +10,7 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 ---
 
 <Layout title="国保と国民年金の保険料を節減  ライフコンサルタント株式会社">
-	<main class="flex flex-col justify-center">
+	<main class="flex flex-col justify-center mb-10">
 		<div class="flex justify-between">
 			<div class="flex items-center">
 				<Image src={logo} alt="説明文" width="311" />
@@ -122,13 +122,13 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 				class="absolute"
 			/>
 			<div
-				class="flex bg-[#E5555F] justify-center items-center w-full mt-[147px]"
+				class="flex bg-[#E5555F] justify-center items-center w-full mt-[147px] flex-wrap py-10"
 			>
 				<div class="text-[#FFD618] font-bold w-[400px] text-center">
 					<div class="text-3xl">保険料節減相談が</div>
 					<div class="text-4xl">無料！</div>
 				</div>
-				<div class="text-white w-[500px] py-20  leading-6">
+				<div class="text-white w-[500px] py-5  leading-6">
 					保険料節減の無料相談は、広島県・福岡県・岡山県・山口県・大阪府・兵庫県限定です。直接面談･電話･メールなど様々な方法で、無料相談および試算を行っておりますので、ご希望の方法をお申し付けください。まずは下記より受付のご連絡をお願いいたします。
 				</div>
 			</div>
@@ -138,16 +138,15 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 			<div class="text-4xl font-black text-[#0588AF]">
 				無料相談・お問い合わせ<br />受付フォーム
 			</div>
-			<div class="text-md mt-5">
-				無料相談、お問い合わせは下記フォームにご入力のうえ、<br
-				/>送信をお願いいたします。
+			<div class="text-md mt-5 comment">
+				無料相談、お問い合わせは下記フォームに<br>ご入力のうえ、送信をお願いいたします。
 			</div>
 			<div class="pt-2 mb-4">
-				お申込み後に、自動返信メールが届きますので、内容をご確認ください。
+				お申込み後に、<br>自動返信メールが届きますので、<br>内容をご確認ください。
 			</div>
 			<Image src={contact02_tel_pc} alt="説明文" height={100} />
 			<div class="text-sm font-bold text-red-500 leading-6">
-				※お申込みは広島県・福岡県・岡山県・山口県・大阪府・兵庫県限定です。<br
+				※お申込みは<br class="md:hidden">広島県・福岡県・岡山県・山口県・大阪府・兵庫県限定です。<br
 				/>
 				※申し訳ありませんが、年金受給者・無職・会社従業員の方からの相談はお受けできませんのでご了承くださいませ。
 			</div>
@@ -156,7 +155,7 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 				※は入力必須項目です。
 			</div>
 		</div>
-		<div class="flex justify-center gap-10 bg-[#333333] py-10">
+		<div class="flex justify-center gap-10 bg-[#333333] py-10 flex-wrap">
 			<Image src={shaho} alt="説明文" width={195} />
 			<Image src={yakuin} alt="説明文" width={195} />
 			<Image src={kokuho} alt="説明文" width={195} />
@@ -169,7 +168,7 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 
 <style>
 	main {
-		padding: 1rem;
+		/* padding: 1rem; */
 		/* width: 800px; */
 		/* max-width: calc(100% - 2rem); */
 		/* color: black; */
