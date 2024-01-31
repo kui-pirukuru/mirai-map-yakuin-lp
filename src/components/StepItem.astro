@@ -1,0 +1,20 @@
+---
+interface Props {
+	stepNo: string;
+}
+
+const { stepNo } = Astro.props;
+---
+
+<div class="flex justify-center w-full md:w-[200px] md:h-40">
+	<div
+		class="bg-red-500 rounded text-white absolute text-3xl md:text-xl font-bold px-5 py-1"
+	>
+		STEP {stepNo}
+	</div>
+	<div
+		class="bg-white rounded-lg py-10 mt-5 text-4xl md:text-xl w-full text-center font-bold md:px-3 whitespace-pre-wrap"
+	>
+		<slot />
+	</div>
+</div>

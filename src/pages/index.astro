@@ -1,167 +1,236 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import MailForm from "../components/MailForm.astro";
+import QuesionItem from "../components/QuesionItem.astro";
+import CaseItem from "../components/CaseItem.astro";
+import StepItem from "../components/StepItem.astro";
 import { Image } from "astro:assets";
 import logo from "../assets/logo.png";
+import logo_sp from "../assets/logo_sp.png";
 import kokuho from "../assets/bnn_kokuho_s.jpg";
 import shaho from "../assets/bnn_shaho_s.jpg";
 import yakuin from "../assets/bnn_yakuin_s.jpg";
 import contact02_tel_pc from "../assets/contact02_tel_pc.png";
 import offer_01_pc from "../assets/offer_01_pc.png";
+import head_tel_pc from "../assets/head_tel_pc.png";
+import head_tel_sp from "../assets/head_tel_sp.png";
+import head_email_sp from "../assets/head_email_sp.png";
 ---
 
 <Layout title="国保と国民年金の保険料を節減  ライフコンサルタント株式会社">
-	<main class="flex flex-col justify-center mb-10">
-		<div class="flex justify-between">
-			<div class="flex items-center">
-				<Image src={logo} alt="説明文" width="311" />
+	<main class="flex flex-col justify-center mb-10 items-center w-full">
+		<div class="w-full md:w-[768px] pt-2">
+			<!-- 通常ヘッダー -->
+			<div class="justify-between hidden md:flex">
+				<div class="flex items-center">
+					<Image src={logo} alt="説明文" width="250" class="" />
+				</div>
+				<div
+					class="flex text-black text-xs font-bold items-center"
+				>
+					ご相談は無料です<br />まずは<br />お問い合わせください
+				</div>
+				<div>
+					<Image src={head_tel_pc} alt="説明文" width="200" />
+				</div>
+				<div class="flex items-center w-[180px]">
+					<button
+						type="button"
+						class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 py-2.5 text-center"
+						>WEBからご予約</button
+					>
+				</div>
 			</div>
-			<div class="flex text-black text-sm font-bold items-center">
-				ご相談は無料です<br />まずはお問い合わせください
+			<!-- モバイルヘッダー -->
+			<div class="flex justify-between md:hidden px-5 mt-5">
+				<Image src={logo_sp} alt="説明文" width="305" />
+				<div>
+					<Image src={head_tel_sp} alt="説明文" width="46" />
+				</div>
+				<div>
+					<Image src={head_email_sp} alt="説明文" width="56" />
+				</div>
 			</div>
+			<!-- Tableサンプル -->
 			<div>
-				<Image
-					src="https://life-consultant-hiroshima.com/lp2208/common/img/head_tel_pc.png"
-					alt="説明文"
-					width="216"
-					height="59"
-				/>
+				<div class="w-full bg-[#008F8F] text-white text-center rounded-lg py-1">導入後のシミュレーション</div>
+				<div class="rounded-lg border-4 rounded-lg border-[#008F8F] my-5 ">
+					<table class="w-full">
+						<thead  class="table-auto">
+						<tr class="rounded-lg text-[#008F8F]">
+							<th class="border-b-2 border-r-2 border-[#008F8F]">あなたの報酬(月額)</th>
+							<th class="border-b-2 border-r-2 border-[#008F8F]">社会保険料（年間）</th>
+							<th class="border-b-2 border-r-2 border-[#008F8F]">節減差額（合計）</th>
+							<th class="border-b-2 border-[#008F8F]">節減率</th>
+						</tr>
+						</thead>
+						<tbody class="text-right  font-bold">
+						<tr>
+							<td class="border-r-2 border-[#008F8F]">30万円</td>
+							<td class="border-r-2 border-[#008F8F]">1,083,600円</td>
+							<td class="border-r-2 border-[#008F8F] text-red-500">-361,200円</td>
+							<td class="text-red-500">-33.3％</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+		</div>
+			<!-- ７つの理由 -->
+			<div
+				class="px-5 bg-[#0488AF] py-10 flex flex-col md:flex-row md:justify-center md:flex-wrap gap-5"
+			>
+				<div
+					class="rounded bg-white w-full md:w-[250px] h-[100px] md:h-[150px] flex md:flex-col items-center py-3"
+				>
+					<div
+						class="text-4xl md:text-3xl font-bold text-[#E6555F] px-5"
+					>
+						1
+					</div>
+					<div
+						class="text-3xl md:text-lg font-bold md:text-center mt-1 md:px-4"
+					>
+						国民健康保険＋国民年金の保険料が最大93万円/年安くなります。
+					</div>
+				</div>
+				<div
+					class="rounded bg-white w-full md:w-[250px] h-[100px] md:h-[150px] flex md:flex-col items-center py-3"
+				>
+					<div
+						class="text-4xl md:text-3xl font-bold text-[#E6555F] px-5"
+					>
+						1
+					</div>
+					<div
+						class="text-3xl md:text-lg font-bold md:text-center mt-1 md:px-4"
+					>
+						国民健康保険＋国民年金の保険料が最大93万円/年安くなります。
+					</div>
+				</div>
 			</div>
-			<div class="flex items-center">
-				<button
-					type="button"
-					class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 py-2.5 text-center"
-					>WEBからご予約</button
+			<div class="bg-blue-500 px-5 py-10 flex flex-col items-center">
+				<div>
+					この国社スマートプランをご利用のお客様から、たくさんの嬉しいお声をいただいています。その一部をご紹介します。
+				</div>
+				<div class="w-full flex gap-5 flex-wrap justify-center">
+					<CaseItem caseNo="01" title="" subtitle="" text="" />
+					<CaseItem caseNo="02" title="" subtitle="" text="" />
+					<CaseItem caseNo="03" title="" subtitle="" text="" />
+				</div>
+				<a
+					class="text-3xl rounded-full bg-[#E5555F] text-white font-bold px-12 py-4 my-5"
+					href="#contact">無料相談のお申し込みはこちら</a
 				>
 			</div>
-		</div>
-		<div class="bg-white rounded-lg px-5 py-3 flex flex-col items-center w-[350px] h-[380px]">
-			<div class="border-b-[2px] border-indigo-500 font-bold ">case <span class="text-lg">01</span></div>
-			<div class="font-bold text-xl">飲食店をされている経営者様</div>
-			<div class="text-lg bg-yellow-400 font-bold px-3 mt-1">90万円/年節減</div>
-			<div class="mt-3 comment leading-7">毎年高い国保＋国民年金の保険料には頭を抱えていましたが、導入後は夫婦で合わせて90万円/年も節減でき、今は保険料を一本化し40数万円/年で大変楽になりました。また話を進めていくうちに所得税も下がることが分かり、大満足です。同時に商売に打ち込める環境も整い、大変感謝しています。効果が継続する割にはコストが控え目だなと思いました。</div>
-		</div>
-		<div class="flex flex-col py-10 items-center">
-			<div class="text-3xl font-black text-[#0088af] py-2">費用について</div>
-			<div class="text-xl font-bold">お客様の負担額は</div>
-			<div class="text-4xl font-bold text-[#E5555F] my-2">約<span class="text-6xl">38,000</span>円/月</div>
-			<div class="font-bold text-xl">のみです。</div>
-			<div class="text-md">
-				上記負担額には、お客様ご自身とご家族の保険料や当社事務手数料など全て含まれています。
+			<div class="bg-[#FFD519] px-5 py-10">
+				<div class="font-black text-center text-4xl leading-[50px]">
+					国民健康保険＋国民年金の<br />保険料節減までの流れ
+				</div>
+				<div class="flex flex-col md:flex-row gap-5 items-center">
+					<StepItem
+						stepNo="01"
+					/>
+					<div class="triangle-down md:hidden"></div>
+					<div class="triangle-right hidden md:block w-40"></div>
+					<StepItem
+						stepNo="01"
+					>無料相談のお申し込み</StepItem>
+				</div>
 			</div>
-			<ul class="text-xs font-bold w-[230px] leading-6 mt-4">
-				<li>導入時の契約金、導入手数料は不要！</li>
-				<li>導入後の維持管理料、更新手数料は不要！</li>
-				<li>解約費用、退会手数料は不要！</li>
-			</ul>
-			<a
-				class="text-2xl rounded-full bg-[#E5555F] text-white font-bold px-12 py-4 my-5"
-				href="#contact">無料相談のお申し込みはこちら</a
-			>
-		</div>
-		<div class="border-[5px] border-[#0588AF] rounded-md py-10 px-10">
-			<div class="text-[#0088af] font-black text-center text-3xl">
-				よくあるご質問
+			<div class="flex flex-col py-10 items-center px-5">
+				<div class="text-5xl font-black text-[#0088af] py-2">
+					費用について
+				</div>
+				<div class="text-2xl font-bold">お客様の負担額は</div>
+				<div class="text-4xl font-bold text-[#E5555F] my-2">
+					約<span class="text-9xl">38,000</span>円/月
+				</div>
+				<div class="font-bold text-2xl mt-5">のみです。</div>
+				<div class="text-2xl font-bold">
+					上記負担額には、お客様ご自身とご家族の保険料や当社事務手数料など全て含まれています。
+				</div>
+				<ul class="text-2xl font-bold md:w-[230px] leading-[40px] mt-4">
+					<li>導入時の契約金、導入手数料は不要！</li>
+					<li>導入後の維持管理料、更新手数料は不要！</li>
+					<li>解約費用、退会手数料は不要！</li>
+				</ul>
+				<a
+					class="text-3xl rounded-full bg-[#E5555F] text-white font-bold px-12 py-4 my-5"
+					href="#contact">無料相談のお申し込みはこちら</a
+				>
 			</div>
-			<div class="divide-y divide-gray-100">
-				<details class="group">
-					<summary
-						class="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-medium text-secondary-900 group-open:text-primary-500"
-					>
-						<div class="font-bold">
-							<span class="text-[#FF0000] text-xl">Q</span>
-							法的に問題はありませんか？
-						</div>
-
-						<div>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-								stroke-width="6"
-								stroke="currentColor"
-								class="block h-5 w-5 group-open:hidden"
-							>
-								<path
-									stroke="#0588AF"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M12 4.5v15m7.5-7.5h-15"></path>
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-								stroke-width="6"
-								stroke="currentColor"
-								class="hidden h-5 w-5 group-open:block"
-							>
-								<path
-									stroke="#0588AF"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M19.5 12h-15"></path>
-							</svg>
-						</div>
-					</summary>
-					<div class="flex pb-4 text-secondary-500 gap-4">
-						<div class="text-[#0588AF] text-2xl font-bold pt-1">
-							A
-						</div>
-						<div class="font-sans">
-							はい、全く問題ありません。<br
-							/>各管轄省庁から全て回答を得て、通達に沿った方策ですので、心配ご無用です。
-						</div>
-					</div>
-				</details>
-				<hr class="h-0.5 my-3 bg-[#0588AF]" />
-			</div>
-		</div>
-		<div class="flex flex-col items-center">
-			<Image
-				src={offer_01_pc}
-				alt="説明文"
-				height={167}
-				class="absolute"
-			/>
 			<div
-				class="flex bg-[#E5555F] justify-center items-center w-full mt-[147px] flex-wrap py-10"
+				class="border-[5px] border-[#0588AF] rounded-md py-10 px-10 mx-5"
 			>
-				<div class="text-[#FFD618] font-bold w-[400px] text-center">
-					<div class="text-3xl">保険料節減相談が</div>
-					<div class="text-4xl">無料！</div>
+				<div class="text-[#0088af] font-black text-center text-3xl">
+					よくあるご質問
 				</div>
-				<div class="text-white w-[500px] py-5  leading-6">
-					保険料節減の無料相談は、広島県・福岡県・岡山県・山口県・大阪府・兵庫県限定です。直接面談･電話･メールなど様々な方法で、無料相談および試算を行っておりますので、ご希望の方法をお申し付けください。まずは下記より受付のご連絡をお願いいたします。
-				</div>
-			</div>
-		</div>
-
-		<div id="contact" class="text-black w-full text-center py-5 flex flex-col items-center">
-			<div class="text-4xl font-black text-[#0588AF]">
-				無料相談・お問い合わせ<br />受付フォーム
-			</div>
-			<div class="text-md mt-5 comment">
-				無料相談、お問い合わせは下記フォームに<br>ご入力のうえ、送信をお願いいたします。
-			</div>
-			<div class="pt-2 mb-4">
-				お申込み後に、<br>自動返信メールが届きますので、<br>内容をご確認ください。
-			</div>
-			<Image src={contact02_tel_pc} alt="説明文" height={100} />
-			<div class="text-sm font-bold text-red-500 leading-6">
-				※お申込みは<br class="md:hidden">広島県・福岡県・岡山県・山口県・大阪府・兵庫県限定です。<br
+				<QuesionItem
+					question="法的に問題はありませんか"
+					anser="はい、全く問題ありません。各管轄省庁から全て回答を得て、通達に沿った方策ですので、心配ご無用です。"
 				/>
-				※申し訳ありませんが、年金受給者・無職・会社従業員の方からの相談はお受けできませんのでご了承くださいませ。
 			</div>
-			<div></div>
-			<div class="text-sm font-bold text-red-500">
-				※は入力必須項目です。
+			<div class="flex flex-col items-center">
+				<Image
+					src={offer_01_pc}
+					alt="説明文"
+					height={200}
+					class="absolute"
+				/>
+				<div
+					class="flex bg-[#E5555F] justify-center items-center w-full mt-[177px] flex-wrap py-10 px-5"
+				>
+					<div class="text-[#FFD618] font-bold w-[400px] text-center">
+						<div class="text-5xl">保険料節減相談が</div>
+						<div class="text-7xl mt-5">無料！</div>
+					</div>
+					<div
+						class="text-2xl font-bold text-white md:w-[500px] py-5 leading-[40px] md:leading-6"
+					>
+						保険料節減の無料相談は、広島県・福岡県・岡山県・山口県・大阪府・兵庫県限定です。直接面談･電話･メールなど様々な方法で、無料相談および試算を行っておりますので、ご希望の方法をお申し付けください。まずは下記より受付のご連絡をお願いいたします。
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="flex justify-center gap-10 bg-[#333333] py-10 flex-wrap">
-			<Image src={shaho} alt="説明文" width={195} />
-			<Image src={yakuin} alt="説明文" width={195} />
-			<Image src={kokuho} alt="説明文" width={195} />
-		</div>
-		<div class="text-sm font-sans text-center my-5">
-			Copyright © ライフコンサルタント株式会社 All rights reserved.
+
+			<div
+				id="contact"
+				class="text-black w-full text-center py-5 flex flex-col items-center"
+			>
+				<div class="text-4xl font-black text-[#0588AF]">
+					無料相談・お問い合わせ<br />受付フォーム
+				</div>
+				<div class="text-md mt-5 comment">
+					無料相談、お問い合わせは下記フォームに<br
+					/>ご入力のうえ、送信をお願いいたします。
+				</div>
+				<div class="pt-2 mb-4">
+					お申込み後に、<br />自動返信メールが届きますので、<br
+					/>内容をご確認ください。
+				</div>
+				<Image src={contact02_tel_pc} alt="説明文" height={100} />
+				<div class="text-sm font-bold text-red-500 leading-6">
+					※お申込みは<br
+						class="md:hidden"
+					/>広島県・福岡県・岡山県・山口県・大阪府・兵庫県限定です。<br
+					/>
+					※申し訳ありませんが、年金受給者・無職・会社従業員の方からの相談はお受けできませんのでご了承くださいませ。
+				</div>
+				<div></div>
+			</div>
+			<div>
+				<MailForm />
+			</div>
+			<!-- 黒帯 -->
+			<div
+				class="flex justify-center gap-10 bg-[#333333] py-10 flex-wrap"
+			>
+				<Image src={shaho} alt="説明文" width={195} />
+				<Image src={yakuin} alt="説明文" width={195} />
+				<Image src={kokuho} alt="説明文" width={195} />
+			</div>
+			<div class="text-sm font-sans text-center my-5">
+				Copyright © ライフコンサルタント株式会社 All rights reserved.
+			</div>
 		</div>
 	</main>
 </Layout>
@@ -185,6 +254,21 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 		list-style: "-";
 	}
 	.comment {
-		font-family: 'Noto Sans JP', '游ゴシック体', YuGothic, "游ゴシック Medium", "Yu Gothic Medium", '游ゴシック', "Yu Gothic", 'メイリオ', sans-serif;
+		font-family: "Noto Sans JP", "游ゴシック体", YuGothic,
+			"游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
+			"メイリオ", sans-serif;
+	}
+
+	.triangle-down {
+		background: #ffa200;
+		height: calc(tan(60deg) * 40px / 2);
+		width: 100px;
+  		clip-path: polygon(0 0, 100% 0, 50% 100%);
+	}
+	.triangle-right {
+		background: #ffa200;
+		height: calc(tan(60deg) * 60px / 2);
+		width: 15px;
+		clip-path: polygon(0 0, 100% 50%, 0 100%);
 	}
 </style>

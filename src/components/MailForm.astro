@@ -1,0 +1,121 @@
+---
+---
+
+<dl class="mailform px-5 bg-white">
+	
+	<div class="text-2xl font-bold text-red-500">
+		※は入力必須項目です。
+	</div>
+	<dt class="mfp mfp_achroma font-bold text-2xl mt-10">お名前<span class="text-red-500">※</span></dt>
+	<dd class="mfp mfp_achroma">
+		<div class="mfp_rows">
+			<div class="">
+				<input type="text" name="お名前" placeholder="(入力必須)フルネームでご入力ください" class="text-xl border border-gray-300 text-gray-900  rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" id="mfp_element_0">
+				<div id="errormsg_お名前" class="mfp_err"></div>
+			</div>
+		</div>
+	</dd>
+
+	<dt class="font-bold text-2xl">会社名もしくは屋号</dt>
+	<dd class="mfp mfp_colored">
+		<div class="mfp_rows">
+			<div class="">
+				<input type="text" name="会社名もしくは屋号" placeholder="(任意)" class="text-xl border border-gray-300 text-gray-900  rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" id="mfp_element_1">
+			<div class="mfp_err" id="errormsg_会社名もしくは屋号"></div></div>
+		</div>
+	</dd>
+
+	<dt class="font-bold text-2xl">お電話番号<span class="text-red-500">※</span></dt>
+	<dd class="mfp mfp_achroma">
+		<div class="mfp_rows">
+			<div class="">
+				<input type="tel" data-type="tel" name="お電話番号" data-min="9" placeholder="(入力必須)" class="text-xl border border-gray-300 text-gray-900  rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" id="mfp_element_2">
+				<div id="errormsg_お電話番号" class="mfp_err"></div>
+			</div>
+		</div>
+	</dd>
+
+	<dt class="font-bold text-2xl">メールアドレス<span class="text-red-500">※</span></dt>
+	<dd class="mfp mfp_colored">
+		<div class="mfp_rows">
+			<div class="">
+				<input type="email" data-type="email" name="email" placeholder="(入力必須)" class="text-xl border border-gray-300 text-gray-900  rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" id="mfp_element_3">
+			</div>
+			<div id="errormsg_email" class="mfp_err"></div>
+		</div>
+	</dd>
+
+	<dt class="font-bold text-2xl">内容<span class="text-red-500">※</span></dt>
+	<dd class="mfp mfp_achroma">
+		<div class="mfp_rows">
+			<div class="flex flex-wrap text-2xl gap-5">
+				<label class="mr-15 mr-lg-25px mfp_not_checked" id="mfp_element_4_label" style="cursor: pointer;"><input type="radio" name="内容" value="無料相談" class=" mfp_element_radio mfp_element_all" id="mfp_element_4"><input type="hidden" name="mfp_内容_checkobj" id="mfp_内容_checkobj" value="1" class=" mfp_element_hidden mfp_element_all"> 無料相談<div class="mfp_err" id="errormsg_mfp_内容_checkobj"></div></label>
+				<label class="mr-15 mr-lg-25px mfp_not_checked" id="mfp_element_6_label" style="cursor: pointer;"><input type="radio" name="内容" value="お問い合わせ" class=" mfp_element_radio mfp_element_all" id="mfp_element_6"> お問い合わせ</label>
+				<label class="mr-15 mr-lg-25px mfp_checked" id="mfp_element_7_label" style="cursor: pointer;"><input type="radio" name="内容" value="その他" class=" mfp_element_radio mfp_element_all" id="mfp_element_7"> その他</label>
+				<div id="errormsg_内容" class="mfp_err"></div>
+			</div>
+		</div>
+	</dd>
+
+	<dt class="font-bold text-2xl">相談方法<span class="text-red-500">※</span></dt>
+	<dd class="mfp mfp_colored">
+		<div class="mfp_rows">
+			<div class="flex flex-wrap text-2xl">
+				<label class="mr-20 mr-lg-25px mfp_not_checked" id="mfp_element_8_label" style="cursor: pointer;"><input type="radio" name="相談方法" value="直接面談" class=" mfp_element_radio mfp_element_all" id="mfp_element_8"><input type="hidden" name="mfp_相談方法_checkobj" id="mfp_相談方法_checkobj" value="1" class=" mfp_element_hidden mfp_element_all"> 直接面談<div class="mfp_err" id="errormsg_mfp_相談方法_checkobj"></div></label>
+				<label class="mr-20 mr-lg-25px mfp_not_checked" id="mfp_element_10_label" style="cursor: pointer;"><input type="radio" name="相談方法" value="電話" class=" mfp_element_radio mfp_element_all" id="mfp_element_10"> 電話</label>
+				<label class="mr-20 mr-lg-25px mfp_not_checked" id="mfp_element_11_label" style="cursor: pointer;"><input type="radio" name="相談方法" value="メール" class=" mfp_element_radio mfp_element_all" id="mfp_element_11"> メール</label>
+				<label id="mfp_element_12_label" class=" mfp_checked" style="cursor: pointer;"><input type="radio" name="相談方法" value="何れでも良い" class="mfp_element_radio mfp_element_all" id="mfp_element_12"> 何れでも良い</label>
+				<div id="errormsg_相談方法" class="mfp_err"></div>
+			</div>
+		</div>
+	</dd>
+
+	<dt class="font-bold text-2xl">その他お問い合わせなど</dt>
+	<dd class="mfp mfp_achroma">
+		<div class="mfp_rows">
+			<div class="mfp_col10">
+				<textarea name="お問合せなど" rows="10" cols="60" placeholder="ご自由にご記入ください" class="text-xl border border-gray-300 text-gray-900  rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" id="mfp_element_13"></textarea>
+			<div class="mfp_err" id="errormsg_お問合せなど"></div></div>
+		</div>
+	</dd>
+</dl>
+<style>
+	.link-card {
+		list-style: none;
+		display: flex;
+		padding: 1px;
+		background-color: #23262d;
+		background-image: none;
+		background-size: 400%;
+		border-radius: 7px;
+		background-position: 100%;
+		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+	}
+	.link-card > a {
+		width: 100%;
+		text-decoration: none;
+		line-height: 1.4;
+		padding: calc(1.5rem - 1px);
+		border-radius: 8px;
+		color: white;
+		background-color: #23262d;
+		opacity: 0.8;
+	}
+	h2 {
+		margin: 0;
+		font-size: 1.25rem;
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+	p {
+		margin-top: 0.5rem;
+		margin-bottom: 0;
+	}
+	.link-card:is(:hover, :focus-within) {
+		background-position: 0;
+		background-image: var(--accent-gradient);
+	}
+	.link-card:is(:hover, :focus-within) h2 {
+		color: rgb(var(--accent-light));
+	}
+</style>

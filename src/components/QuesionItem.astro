@@ -1,0 +1,59 @@
+---
+interface Props {
+	question: string;
+	anser: string;
+}
+
+const { question, anser } = Astro.props;
+---
+
+<div class="divide-y divide-gray-100">
+	<details class="group">
+		<summary
+			class="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-medium text-secondary-900 group-open:text-primary-500"
+		>
+			<div class="font-bold">
+				<span class="text-[#FF0000] text-xl">Q</span>
+				{question}
+			</div>
+
+			<div>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					stroke-width="6"
+					stroke="currentColor"
+					class="block h-5 w-5 group-open:hidden"
+				>
+					<path
+						stroke="#0588AF"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M12 4.5v15m7.5-7.5h-15"></path>
+				</svg>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					stroke-width="6"
+					stroke="currentColor"
+					class="hidden h-5 w-5 group-open:block"
+				>
+					<path
+						stroke="#0588AF"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M19.5 12h-15"></path>
+				</svg>
+			</div>
+		</summary>
+		<div class="flex pb-4 text-secondary-500 gap-4">
+			<div class="text-[#0588AF] text-2xl font-bold pt-1">
+				A
+			</div>
+			<div class="font-sans">
+				{anser}
+			</div>
+		</div>
+	</details>
+	<hr class="h-0.5 my-3 bg-[#0588AF]" />
+</div>
