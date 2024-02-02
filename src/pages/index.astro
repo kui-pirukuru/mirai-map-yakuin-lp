@@ -4,6 +4,7 @@ import MailForm from "../components/MailForm.astro";
 import QuesionItem from "../components/QuesionItem.astro";
 import CaseItem from "../components/CaseItem.astro";
 import StepItem from "../components/StepItem.astro";
+import ContactButton from "../components/ContactButton.astro";
 import { Image } from "astro:assets";
 import logo from "../assets/logo.png";
 import logo_sp from "../assets/logo_sp.png";
@@ -15,6 +16,8 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 import head_tel_pc from "../assets/head_tel_pc.png";
 import head_tel_sp from "../assets/head_tel_sp.png";
 import head_email_sp from "../assets/head_email_sp.png";
+import person01 from "../assets/person01.png";
+import arrow from "../assets/arrow.png";
 ---
 
 <Layout title="国保と国民年金の保険料を節減  ライフコンサルタント株式会社">
@@ -25,9 +28,7 @@ import head_email_sp from "../assets/head_email_sp.png";
 				<div class="flex items-center">
 					<Image src={logo} alt="説明文" width="250" class="" />
 				</div>
-				<div
-					class="flex text-black text-xs font-bold items-center"
-				>
+				<div class="flex text-black text-xs font-bold items-center">
 					ご相談は無料です<br />まずは<br />お問い合わせください
 				</div>
 				<div>
@@ -42,7 +43,7 @@ import head_email_sp from "../assets/head_email_sp.png";
 				</div>
 			</div>
 			<!-- モバイルヘッダー -->
-			<div class="flex justify-between md:hidden px-5 mt-5">
+			<div class="flex justify-between md:hidden px-5 my-5">
 				<Image src={logo_sp} alt="説明文" width="305" />
 				<div>
 					<Image src={head_tel_sp} alt="説明文" width="46" />
@@ -51,30 +52,184 @@ import head_email_sp from "../assets/head_email_sp.png";
 					<Image src={head_email_sp} alt="説明文" width="56" />
 				</div>
 			</div>
+			<!-- Top -->
+			<div class=" flex flex-col items-center px-5">
+				<div class="bg-white text-red-500 font-black text-2xl px-2 py-2">
+					個人事業入試(フリーランス)の方、必見!
+				</div>
+				<div class="flex justify-center mt-5">
+					<div>
+						<div class="font-bold text-3xl">社会保険料が</div>
+						<div
+							class="text-4xl font-black logo_background_white w-[270px]"
+						>
+							<span class="text-8xl font-black mt-0">30</span
+							>％/年 以上
+						</div>
+						<div
+							class="text-4xl font-bold tracking-[-2px] logo_background_white w-[300px]"
+						>
+							安くなります！
+						</div>
+					</div>
+					<div>
+						<Image src={person01} alt="説明文" width={300} />
+					</div>
+				</div>
+				<ContactButton />
+			</div>
 			<!-- Tableサンプル -->
-			<div>
-				<div class="w-full bg-[#008F8F] text-white text-center rounded-lg py-1">導入後のシミュレーション</div>
-				<div class="rounded-lg border-4 rounded-lg border-[#008F8F] my-5 ">
+			<div class="px-5 flex flex-col items-center bg-white pt-5">
+				<div class="flex flex-col md:flex-row items-center">
+					<div
+						class="flex-1 text-xl font-bold text-[#008F8F] border-b-2 md:border-b-0 border-[#008F8F]"
+					>
+						年間30％以上も安くなる<br class="hidden md:block" />
+						「社保コンパクトプラン」とは
+					</div>
+					<div class="flex-1 font-bold">
+						「社保コンパクトプラン」を取り入れていただくことで、社会保険料を<span
+							class="text-red-500">年間30％以上</span
+						>も節減することができます。<br /><br />
+						ご負担は、社会保険料節減開始月から<span
+							class="text-red-500"
+							>2ヶ年分の社会保険料節減効果額(会社及び役員)の20％(税別)</span
+						>。<br /><br />
+						その後も効果は続きますが、ご負担は発生しません。<div
+							class="text-xs"
+						>
+							※対象者年齢や諸条件により節減効果は一定ではありません。
+						</div>
+					</div>
+				</div>
+				<div class="h-1.5 bg-[#008F8F] w-full"></div>
+				<Image src={arrow} alt="説明文" width="36" />
+				<div class="font-black text-xl text-center py-5">
+					あなたの報酬が高いほど、<br />社会保険料が安くなります。
+				</div>
+				<div class="w-full bg-[#008F8F] text-white text-center py-1">
+					導入後のシミュレーション
+				</div>
+				<div
+					class="rounded-lg border-4 rounded-lg border-[#008F8F] my-2 w-full"
+				>
 					<table class="w-full">
-						<thead  class="table-auto">
-						<tr class="rounded-lg text-[#008F8F]">
-							<th class="border-b-2 border-r-2 border-[#008F8F]">あなたの報酬(月額)</th>
-							<th class="border-b-2 border-r-2 border-[#008F8F]">社会保険料（年間）</th>
-							<th class="border-b-2 border-r-2 border-[#008F8F]">節減差額（合計）</th>
-							<th class="border-b-2 border-[#008F8F]">節減率</th>
-						</tr>
+						<thead class="table-auto">
+							<tr class="rounded-lg text-[#008F8F]">
+								<th
+									class="border-b-2 border-r-2 border-[#008F8F]"
+									>あなたの報酬<br
+										class="md:hidden"
+									/>(月額)</th
+								>
+								<th
+									class="border-b-2 border-r-2 border-[#008F8F]"
+									>社会保険料<br
+										class="md:hidden"
+									/>（年間）</th
+								>
+								<th
+									class="border-b-2 border-r-2 border-[#008F8F]"
+									>節減差額<br
+										class="md:hidden"
+									/>（合計）</th
+								>
+								<th class="border-b-2 border-[#008F8F]"
+									>節減率</th
+								>
+							</tr>
 						</thead>
-						<tbody class="text-right  font-bold">
-						<tr>
-							<td class="border-r-2 border-[#008F8F]">30万円</td>
-							<td class="border-r-2 border-[#008F8F]">1,083,600円</td>
-							<td class="border-r-2 border-[#008F8F] text-red-500">-361,200円</td>
-							<td class="text-red-500">-33.3％</td>
-						</tr>
+						<tbody class="text-right font-bold">
+							<tr>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F]"
+									>30万円</td
+								>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F]"
+									>1,083,600円</td
+								>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F] text-red-500"
+									>-361,200円</td
+								>
+								<td
+									class="border-b-2 border-[#008F8F] text-red-500"
+									>-33.3％</td
+								>
+							</tr>
+							<tr>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F]"
+									>50万円</td
+								>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F]"
+									>1,806,000円</td
+								>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F] text-red-500"
+									>-794,640円</td
+								>
+								<td
+									class="border-b-2 border-[#008F8F] text-red-500"
+									>-44.0％</td
+								>
+							</tr>
+							<tr>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F]"
+									>80万円</td
+								>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F]"
+									>2,480,160円</td
+								>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F] text-red-500"
+									>-1,257,684円</td
+								>
+								<td
+									class="border-b-2 border-[#008F8F] text-red-500"
+									>-50.7％</td
+								>
+							</tr>
+							<tr>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F]"
+									>100万円</td
+								>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F]"
+									>2,749,200円</td
+								>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F] text-red-500"
+									>-1,523,184円</td
+								>
+								<td
+									class="border-b-2 border-[#008F8F] text-red-500"
+									>-55.4％</td
+								>
+							</tr>
+							<tr>
+								<td class="border-r-2 border-[#008F8F]"
+									>120万円</td
+								>
+								<td class="border-r-2 border-[#008F8F]"
+									>3,074,880円</td
+								>
+								<td
+									class="border-r-2 border-[#008F8F] text-red-500"
+									>-1,848,864円</td
+								>
+								<td class="text-red-500">-60.1％</td>
+							</tr>
 						</tbody>
 					</table>
 				</div>
-		</div>
+			</div>
+
 			<!-- ７つの理由 -->
 			<div
 				class="px-5 bg-[#0488AF] py-10 flex flex-col md:flex-row md:justify-center md:flex-wrap gap-5"
@@ -127,14 +282,10 @@ import head_email_sp from "../assets/head_email_sp.png";
 					国民健康保険＋国民年金の<br />保険料節減までの流れ
 				</div>
 				<div class="flex flex-col md:flex-row gap-5 items-center">
-					<StepItem
-						stepNo="01"
-					/>
+					<StepItem stepNo="01" />
 					<div class="triangle-down md:hidden"></div>
 					<div class="triangle-right hidden md:block w-40"></div>
-					<StepItem
-						stepNo="01"
-					>無料相談のお申し込み</StepItem>
+					<StepItem stepNo="01">無料相談のお申し込み</StepItem>
 				</div>
 			</div>
 			<div class="flex flex-col py-10 items-center px-5">
@@ -263,12 +414,21 @@ import head_email_sp from "../assets/head_email_sp.png";
 		background: #ffa200;
 		height: calc(tan(60deg) * 40px / 2);
 		width: 100px;
-  		clip-path: polygon(0 0, 100% 0, 50% 100%);
+		clip-path: polygon(0 0, 100% 0, 50% 100%);
 	}
 	.triangle-right {
 		background: #ffa200;
 		height: calc(tan(60deg) * 60px / 2);
 		width: 15px;
 		clip-path: polygon(0 0, 100% 50%, 0 100%);
+	}
+	.logo_background_white {
+		background: linear-gradient(
+			180deg,
+			#00000000 0%,
+			#00000000 80%,
+			#fff 80%,
+			#fff 100%
+		);
 	}
 </style>
