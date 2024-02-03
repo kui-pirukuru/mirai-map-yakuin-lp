@@ -5,6 +5,7 @@ import QuesionItem from "../components/QuesionItem.astro";
 import CaseItem from "../components/CaseItem.astro";
 import StepItem from "../components/StepItem.astro";
 import ContactButton from "../components/ContactButton.astro";
+import ReasonItem from "../components/ReasonItem.astro";
 import { Image } from "astro:assets";
 import logo from "../assets/logo.png";
 import logo_sp from "../assets/logo_sp.png";
@@ -25,11 +26,11 @@ import mail from "../assets/mail.png";
 
 <Layout title="国保と国民年金の保険料を節減  ライフコンサルタント株式会社">
 	<main class="flex flex-col justify-center mb-10 items-center w-full">
-		<div class="w-full md:px-20 lg:px-60 pt-2">
+		<div class="w-full md:px-5 lg:px-60 pt-2">
 			<!-- 通常ヘッダー -->
 			<div class="justify-between hidden md:flex">
 				<div class="flex items-center">
-					<Image src={logo} alt="説明文" width="250" class="" />
+					<Image src={logo} alt="説明文" width="250" quality={100} format="png" />
 				</div>
 				<div class="flex text-black text-xs font-bold items-center">
 					ご相談は無料です<br />まずは<br />お問い合わせください
@@ -37,10 +38,10 @@ import mail from "../assets/mail.png";
 				<div>
 					<Image src={head_tel_pc} alt="説明文" width="200" />
 				</div>
-				<div class="flex items-center w-[180px]">
+				<div class="flex items-center">
 					<button
 						type="button"
-						class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 py-2.5 text-center"
+						class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 md:px-5 py-2.5 text-center"
 						>WEBからご予約</button
 					>
 				</div>
@@ -56,7 +57,35 @@ import mail from "../assets/mail.png";
 				</div>
 			</div>
 			<!-- Top -->
-			<div class="flex flex-col items-center px-3">
+			<div class="hidden md:flex px-3 justify-center">
+				<div class="flex flex-col">
+					<div
+						class="bg-white text-red-500 font-bold text-xl lg:text-3xl px-3 py-2 flex-none"
+					>
+						個人事業主(フリーランス)の方、必見!
+					</div>
+					<div class="flex justify-center mt-5">
+						<div>
+							<div class="font-bold text-3xl lg:text-5xl">社会保険料が</div>
+							<div
+								class="text-3xl lg:text-5xl font-black logo_background_white"
+							>
+								<span class="text-4xl lg:text-6xl font-black mt-0">30</span
+								>％/年 以上安くなります！
+							</div>
+						</div>
+					</div>
+					<div class="flex justify-center mt-3">
+						<a
+							class="text-xl rounded-full bg-[#E5555F] text-white font-bold px-6 md:px-12 py-2 text-center"
+							href="#contact">無料相談のお申し込みはこちら</a
+						>
+					</div>
+				</div>
+
+				<Image src={person01} alt="説明文" width={200} quality={100} format="png"/>
+			</div>
+			<div class="flex md:hidden flex-col items-center px-3">
 				<div class="bg-white text-red-500 font-bold text-xl px-3 py-2">
 					個人事業主(フリーランス)の方、必見!
 				</div>
@@ -81,15 +110,16 @@ import mail from "../assets/mail.png";
 				</div>
 				<ContactButton />
 			</div>
+			
 			<!-- 不安 -->
 			<div class="pt-5 bg-white flex flex-col items-center text-xl">
 				<div class="text-[#008F8F] font-bold">
 					Any troubles? Problems?
 				</div>
-				<div class="text-center text-[#BA2644] font-bold text-4xl mb-3">
+				<div class="text-center text-[#BA2644] font-bold text-4xl e mb-3">
 					こんな悩みや不安は<br />ありませんか？
 				</div>
-				<ul class="font-bold leading-8">
+				<div class="font-bold leading-8 text-lg md:text-2xl">
 					<div class="flex items-center">
 						<div>
 							<Image
@@ -142,10 +172,10 @@ import mail from "../assets/mail.png";
 							社会保険労務士･税理士に<br />相談しても解決しない
 						</div>
 						<div>
-							<Image src={person02} alt="説明文" width={50} />
+							<Image src={person02} alt="説明文" width={70} />
 						</div>
 					</div>
-				</ul>
+				</div>
 			</div>
 			<!-- Tableサンプル -->
 			<div class="px-5 flex flex-col items-center bg-white py-5">
@@ -300,60 +330,6 @@ import mail from "../assets/mail.png";
 					</table>
 				</div>
 			</div>
-			<!-- ご相談内容 -->
-			<div class="">
-				<div class="px-5 flex flex-col items-center">
-					<Image src={mail} alt="説明文" width={78} />
-					<div class="text-[#0488AF] font-black text-3xl text-center">
-						私たちに寄せられた<br class="md:hidden" />切実なご相談
-					</div>
-					<div class="font-bold">
-						当社への相談内容についてご紹介します。
-					</div>
-					<div class="flex flex-col items-center">
-						<div
-							class="bg-[#008F8F] text-white text-center px-10 py-2 text-2xl comment w-[200px] absolute"
-						>
-							ご相談内容
-						</div>
-						<div
-							class="border-4 rounded-lg bg-white border-[#008F8F] mt-[20px] pt-10 p-5 text-[#008F8F] font-bold"
-						>
-							私は43歳で薬の卸業をしています。<br><br>
-							現在、報酬は月額230万円に設定していますが、
-							個人の社会保険料は約284万円です。<br><br>
-							娘は大学進学を控えていて、妻との余生も考えると、
-							保険料が高くなっていくことに不安を感じています。
-						</div>
-						<div class="comment text-lg leading-8">
-							このようなご相談でした。<br><br>
-							お客様が関与税理士に相談したところ、<br>
-							「ガンバって所得を今の倍にしましょう」<br>
-							「社会保険料は上限があるのでそれ以上は上がりませんよ」とのことでした。<br><br>
-							その税理士の回答に、あきれ返ったお客様が当社に相談されたのも無理はありません。<br><br>
-							相談者は事業に対して情熱的で大変前向きな方でした。<br>
-							お客様を想う気持ちも人一倍。とはいえ、今のままでは保険料が負担になり、<br>
-							生活や事業存続にも支障をきたします。<br><br>
-							そこで私は、社保コンパクトプランのポイントとスキームを説明させていただきました。すると「節減額はもちろん、それ以上にメリットも大いに期待できるので
-							是非導入したい」とのお言葉をいただけたのです。
-						</div>
-						<div class="bg-[#FFF5EB] px-5 py-8 font-bold text-xl">
-							導入後は合法的に<br>
-							社会保険料が124万円/年まで下がりました。<br>
-							負担額は２ヶ年分の節減効果額（会社及び役員）の20％（税別）で、<br>
-							コンサルティング報酬は導入初年度のみ。<br>
-							結果、160万円/年節減できました。
-						</div>
-						<div>
-							※対象者年齢や諸条件により節減効果は一定ではありません。<br
-							/>
-							※ コンサルティング報酬は節減策導入時(初年度)のみで、導入後の報酬は不要です。1度導入すれば節減効果は永続します。<br
-							/>
-							※ コンサルティング報酬は会社規模、対象者数により変動します。
-						</div>
-					</div>
-				</div>
-			</div>
 			<!-- ７つの理由 -->
 			<div class="bg-[#0488AF] py-5">
 				<div class="text-white text-xl font-bold text-center">
@@ -363,39 +339,31 @@ import mail from "../assets/mail.png";
 					/>７つの理由
 				</div>
 				<div
-					class="px-5 py-10 flex flex-col md:flex-row md:justify-center md:flex-wrap gap-5"
+					class="px-5 py-10 flex flex-col md:flex-row md:justify-center md:flex-wrap gap-3"
 				>
-					<div
-						class="rounded bg-white w-full md:w-[250px] h-[100px] md:h-[150px] flex md:flex-col items-center py-3"
-					>
-						<div
-							class="text-4xl md:text-3xl font-bold text-[#E6555F] px-5"
-						>
-							1
-						</div>
-						<div
-							class="text-2xl md:text-lg font-bold md:text-center mt-1 md:px-4"
-						>
-							国民健康保険＋国民年金の保険料が最大93万円/年安くなります。
-						</div>
-					</div>
-					<div
-						class="rounded bg-white w-full md:w-[250px] h-[100px] md:h-[150px] flex md:flex-col items-center py-3"
-					>
-						<div
-							class="text-4xl md:text-3xl font-bold text-[#E6555F] px-5"
-						>
-							1
-						</div>
-						<div
-							class="text-2xl md:text-lg font-bold md:text-center mt-1 md:px-4"
-						>
-							国民健康保険＋国民年金の保険料が最大93万円/年安くなります。
-						</div>
-					</div>
+					<ReasonItem no="1">
+						社会保険料が30％以上 /年安くなります
+					</ReasonItem>
+
+					<ReasonItem no="2">
+						手元の資金を増やすことで、事業財務と経営が改善されます
+					</ReasonItem>
+					<ReasonItem no="3">
+						規定変更などの面倒な手続きはありません
+					</ReasonItem>
+					<ReasonItem no="4">
+						オーナー・役員・従業員の年収を下げる必要はありません
+					</ReasonItem>
+					<ReasonItem no="5">
+						所得税、住民税、消費税、事業税を節減できるケースがあります
+					</ReasonItem>
+					<ReasonItem no="6">個人の手取りが増えます</ReasonItem>
+					<ReasonItem no="7">
+						現在の税理士や社会保険労務士の承諾なく完成します
+					</ReasonItem>
 				</div>
 				<div
-					class="text-white text-left md:text-center text-2xl md:text-sm px-5 leading-9 comment"
+					class="text-white text-left md:text-center text-2xl md:text-sm px-5 leading-9 comment mb-5"
 				>
 					この「社保コンパクトプラン」は、<br
 						class="md:hidden"
@@ -412,6 +380,109 @@ import mail from "../assets/mail.png";
 				</div>
 				<ContactButton />
 			</div>
+			<!-- ご相談内容 -->
+			<div class="my-5">
+				<div class="px-5 flex flex-col items-center">
+					<Image src={mail} alt="説明文" width={78} />
+					<div class="text-[#0488AF] font-black text-3xl text-center">
+						私たちに寄せられた<br class="md:hidden" />切実なご相談
+					</div>
+					<div class="font-bold">
+						当社への相談内容についてご紹介します。
+					</div>
+					<div class="flex flex-col items-center">
+						<div
+							class="bg-[#008F8F] text-white text-center px-10 py-2 text-2xl comment w-[200px] absolute"
+						>
+							ご相談内容
+						</div>
+						<div
+							class="md:text-lg md:w-[600px] border-4 rounded-lg bg-white border-[#008F8F] mt-[20px] pt-10 p-5 text-[#008F8F] font-bold"
+						>
+							私は43歳で薬の卸業をしています。<br /><br />
+							現在、報酬は月額230万円に設定していますが、 個人の社会保険料は約284万円です。<br
+							/><br />
+							娘は大学進学を控えていて、妻との余生も考えると、 保険料が高くなっていくことに不安を感じています。
+						</div>
+						<div class="comment text-lg leading-8">
+							このようなご相談でした。<br /><br />
+							お客様が関与税理士に相談したところ、<br />
+							「ガンバって所得を今の倍にしましょう」<br />
+							「社会保険料は上限があるのでそれ以上は上がりませんよ」とのことでした。<br
+							/><br />
+							その税理士の回答に、あきれ返ったお客様が当社に相談されたのも無理はありません。<br
+							/><br />
+							相談者は事業に対して情熱的で大変前向きな方でした。<br
+							/>
+							お客様を想う気持ちも人一倍。とはいえ、今のままでは保険料が負担になり、<br
+							/>
+							生活や事業存続にも支障をきたします。<br /><br />
+							そこで私は、社保コンパクトプランのポイントとスキームを説明させていただきました。すると「節減額はもちろん、それ以上にメリットも大いに期待できるので
+							是非導入したい」とのお言葉をいただけたのです。
+						</div>
+						<div class="bg-[#FFF5EB] px-5 py-8 font-bold text-xl">
+							導入後は合法的に<br />
+							社会保険料が124万円/年まで下がりました。<br />
+							負担額は２ヶ年分の節減効果額（会社及び役員）の20％（税別）で、<br
+							/>
+							コンサルティング報酬は導入初年度のみ。<br />
+							結果、160万円/年節減できました。
+						</div>
+						<div>
+							※対象者年齢や諸条件により節減効果は一定ではありません。<br
+							/>
+							※ コンサルティング報酬は節減策導入時(初年度)のみで、導入後の報酬は不要です。1度導入すれば節減効果は永続します。<br
+							/>
+							※ コンサルティング報酬は会社規模、対象者数により変動します。
+						</div>
+						<ContactButton />
+					</div>
+				</div>
+			</div>
+			<!-- 社保コンパクトプラン -->
+			<div class="bg-yellow-500">
+				<div class="px-5 flex flex-col items-center py-10">
+					<div class="font-bold text-2xl">
+						壮大なご指示をいただいている
+					</div>
+					<div class="font-bold text-3xl mb-5">
+						「社保コンパクトプラン」
+					</div>
+					<div class="comment leading-7">
+						ライフコンサルタント株式会社の徳永吉一と申します。
+						私たちは自営業主様が抱える課題や問題を解決し、
+						改善に向けサポートさせていただくことを生業としております。<br
+						/><br />
+						自営業主様は必死に経営をされています。 自力で事業を発展させるためには、
+						徹底的にムダを省き手元の資金を最大化することは必要不可欠のはずです。<br
+						/>
+						しかし、<br />
+						現在インターネット上や書籍に掲載されている安易な保険料節減情報は、
+					</div>
+					<div class="bg-white font-black px-10 py-5">
+						１　誰もが知っているありきたりな対策<br />
+						２　高度過ぎて使えない対策<br />
+						３　そもそも使い物にならない対策
+					</div>
+
+					<div class="comment leading-7 mb-5">
+						のいずれかです。
+						必死に経営に臨んでいる自営業主様にとっては、物足りない代物ではないでしょうか。<br
+						/><br />
+						しかし、私たちが提唱する社保コンパクトプランは別物です。
+						世の中には効果的で高度な節減方法がたくさん存在しています。
+						そして聡明な自営業主様はこっそり実行しているのです。<br
+						/><br />
+						私たちは、この社保コンパクトを通じて事業の信用向上に貢献できます。
+						そして更に事業が発展するよう全力でサポートします。 それが私の使命です。共感いただける方は以下もご精読くださいませ。<br
+						/><br />
+						もし私たちの取り組みにご賛同いただければ、無料相談にお申込みください。
+						きっとご満足いただける結果となるでしょう。
+					</div>
+					<ContactButton />
+				</div>
+			</div>
+
 			<div class="bg-blue-500 px-5 py-10 flex flex-col items-center">
 				<div>
 					この国社スマートプランをご利用のお客様から、たくさんの嬉しいお声をいただいています。その一部をご紹介します。
@@ -429,10 +500,18 @@ import mail from "../assets/mail.png";
 					国民健康保険＋国民年金の<br />保険料節減までの流れ
 				</div>
 				<div class="flex flex-col md:flex-row gap-5 items-center">
-					<StepItem stepNo="01" />
+					<StepItem stepNo="01">無料相談の<br>お申し込み</StepItem>
 					<div class="triangle-down md:hidden"></div>
 					<div class="triangle-right hidden md:block w-40"></div>
-					<StepItem stepNo="01">無料相談のお申し込み</StepItem>
+					<StepItem stepNo="02"><div>無料相談<br><span class="text-sm md:text-xs">(直接面談・電話・メール可)</span></div></StepItem>
+					
+					<div class="triangle-down md:hidden"></div>
+					<div class="triangle-right hidden md:block w-40"></div>
+					<StepItem stepNo="03">無料相談の結果報告・試算・社保コンパクトプランのご提案</StepItem>
+					
+					<div class="triangle-down md:hidden"></div>
+					<div class="triangle-right hidden md:block w-40"></div>
+					<StepItem stepNo="04" >導入決定・導入サポート・継続サポート</StepItem>
 				</div>
 			</div>
 			<div class="flex flex-col py-10 items-center px-5">
@@ -447,7 +526,7 @@ import mail from "../assets/mail.png";
 				<div class="text-2xl">
 					上記負担額には、お客様ご自身とご家族の保険料や当社事務手数料など全て含まれています。
 				</div>
-				<ul class="text-xl font-bold md:w-[230px] leading-[40px] mt-4">
+				<ul class="text-xl font-bold md:w-[380px] leading-[40px] mt-4">
 					<li>導入時の契約金、導入手数料は不要！</li>
 					<li>導入後の維持管理料、更新手数料は不要！</li>
 					<li>解約費用、退会手数料は不要！</li>
@@ -474,14 +553,14 @@ import mail from "../assets/mail.png";
 					class="absolute px-5"
 				/>
 				<div
-					class="flex bg-[#E5555F] justify-center items-center w-full mt-[140px] md:mt-[177px] flex-wrap py-10 px-5"
+					class="flex bg-[#E5555F] justify-center items-center w-full mt-[160px] flex-wrap py-10 px-5"
 				>
 					<div class="text-[#FFD618] font-bold w-[340px] text-center">
 						<div class="text-4xl">保険料節減相談が</div>
 						<div class="text-7xl mt-5">無料！</div>
 					</div>
 					<div
-						class="text-2xl font-bold text-white md:w-[500px] py-5 leading-[40px] md:leading-6"
+						class="text-2xl font-bold text-white md:w-[600px] lg:w-[900px] py-5 leading-10"
 					>
 						保険料節減の無料相談は、広島県・福岡県・岡山県・山口県・大阪府・兵庫県限定です。直接面談･電話･メールなど様々な方法で、無料相談および試算を行っておりますので、ご希望の方法をお申し付けください。まずは下記より受付のご連絡をお願いいたします。
 					</div>
@@ -500,8 +579,7 @@ import mail from "../assets/mail.png";
 					/>ご入力のうえ、送信をお願いいたします。
 				</div>
 				<div class="pt-2 mb-4">
-					お申込み後に、<br />自動返信メールが届きますので、<br
-					/>内容をご確認ください。
+					お申込み後に、<br class="md:hidden" />自動返信メールが届きますので、<br  class="md:hidden"/>内容をご確認ください。
 				</div>
 				<Image
 					src={contact02_tel_pc}

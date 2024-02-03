@@ -1,0 +1,16 @@
+---
+interface Props {
+	no: string;
+}
+
+const { no } = Astro.props;
+---
+
+<div
+	class="rounded bg-white w-full md:w-[250px] h-[100px] md:h-[150px] flex md:flex-col items-center py-3"
+>
+	<div class="text-4xl md:text-3xl font-bold text-[#E6555F] px-5">{no}</div>
+	<div class="text-2xl md:text-lg font-bold md:text-center mt-1 pr-1 md:px-4 h-full flex items-center">
+		<slot></slot>
+	</div>
+</div>
