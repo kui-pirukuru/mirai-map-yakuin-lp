@@ -1,0 +1,66 @@
+---
+import { Image } from "astro:assets";
+import ceo from "../assets/3975_color.png";
+import note from "../assets/note.png";
+---
+
+
+<div class="flex flex-col items-center text-xl w-full py-10 font-bold bg-[#FBDA32]">
+	<div class="md:w-[768px] flex flex-col text-center">
+		<div class="bg-white rounded-2xl px-8 py-8 text-left">
+			初めまして、みらいマップ株式会社　代表の徳永吉一です。<br>
+			私たちは創業以来一貫して会社の財務体質の強化と経費削減、<br>
+			経営者や役員の手元資金の最大化に努めてまいりました。
+		</div>
+		<Image
+			class="absolute ml-[580px] mt-2"
+			src={ceo}
+			alt="説明文"
+			height="175"
+		/>
+		<div class="px-16 flex flex-col gap-6 mt-12">
+			<div class="text-left flex flex-row items-center">
+				<div class="text-2xl">
+					<span class="text-4xl">「社保ダイエットプラン」</span>には<br>
+					３つの特徴があります
+				</div>
+				<Image
+					class=""
+					src={note}
+					alt="説明文"
+					height="96"
+				/>
+			</div>
+				<div class="bg-white rounded-lg flex flex-row h-20 items-center">
+					<div class="text-5xl w-24 text-[#BA2644] font-bold">
+						1
+					</div>
+					<div class="text-lg text-left">
+					全てのプロセスが社会保険、税務のルール内で行われ、<br>
+					法令遵守のもとに安心して節減を図ることができます。
+					</div>
+				</div>
+				
+				<div class="bg-white rounded-lg flex flex-row h-20 items-center">
+					<div class="text-5xl w-24 text-[#BA2644] font-bold">
+						2
+					</div>
+					<div class="text-lg text-left">
+						貴社専任の社会保険労務士や税理士は変更不要で、<br>
+						節減策を導入できます。
+					</div>
+				</div>
+				
+				<div class="bg-white rounded-lg flex flex-row h-20 items-center">
+					<div class="text-5xl w-24 text-[#BA2644] font-bold">
+						3
+					</div>
+					<div class="text-lg text-left">
+						会社経営者、役員の年収を下げることなく社会保険料を節減し、<br>
+						法人経費削減と個人の手取額増加を実現できます。
+					</div>
+				</div>
+			<div>
+		</div>
+	</div>
+</div>

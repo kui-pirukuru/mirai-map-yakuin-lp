@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import mail from "../assets/mail.png";
+---
+
+<div
+	class="flex flex-col items-center w-full py-10 "
+>
+	<div class="md:w-[568px] flex flex-col text-center gap-10 items-center">
+		<div class="text-white text-3xl font-bold flex items-center flex-col">
+			<Image src={mail} alt="説明文" width="53" />
+			<div>
+				「社保ダイエットプラン」を<br>
+				ご利用いただいたお客さまの声
+			</div>
+		</div>
+		<div class="bg-white font-bold px-5 py-6 text-left">
+			<div class="underline decoration-yellow-500 decoration-4 underline-offset-0 text-xl mb-5">
+				導入決断までの感想は？
+			</div>
+			<div class="">
+				担当者から説明を受けるまでは半信半疑でしたが、導入から完成までの３ステップやメリット･デメリットとも丁寧に説明いただき迷わず決断できました。試算したところ役員２名で１年間に社会保険料節減額は270万円以上とのことでした。また当社の営業利益率が約10％ですので、節減額270万円は年間売上額2,700万円の利益額に相当する額だと理解できました。
+			</div>
+		</div>
+		<div class="bg-white font-bold px-5 py-6 text-left">
+			<div class="underline decoration-[#E6607B] decoration-4 underline-offset-0 text-xl mb-5">
+				手続き中は？
+			</div>
+			<div class="">
+				手続き中は、ステップ１つ１つが理解しやすい内容でした。手続きが簡単な割には効果絶大で、今後10年間の社会保険料節減額の総額が2,700万円以上になるので迷いはありませんでした。,700万円の利益額に相当する額だと理解できました。
+			</div>
+		</div>
+		<div class="bg-white font-bold px-5 py-6 text-left">
+			<div class="underline decoration-yellow-500 decoration-4 underline-offset-0 text-xl mb-5">
+				導入後は？
+			</div>
+			<div class="">
+				節減を実感できるまでに３か月の時間を要するとのことでした。その後は大幅に社会保険料が下がり、個人の手取も増え、会社の保険料負担も軽減でき大満足です。仲の良い取引先社長に紹介したところ迷わず採用すると感謝の言葉をいただきました。,700万円の利益額に相当する額だと理解できました。
+			</div>
+		</div>
+	</div>
+</div>

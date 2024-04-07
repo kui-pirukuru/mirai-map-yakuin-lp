@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import kokuban from "../assets/9435_color.png";
+
+---
+
+<div class="bg-white h-[550px] font-bold flex justify-center">
+	<div class="md:w-[768px] flex flex-col items-center">
+		<div class="text-[#E6607B] text-2xl py-10">
+			それは<span class="text-4xl">「社保ダイエットプラン」</span>です。
+		</div>
+		<div class="w-full flex justify-center">
+			<div class="absolute">
+				<Image
+				src={kokuban}
+				alt="説明文"
+				height="350"
+				/>
+			</div>
+			<div class="absolute mt-9 font-bold mr-[210px] text-xl">
+				私たちの「社保ダイエットプラン」は、<br>
+				その悩みを解決するための<br>
+				<span class="text-[#E6607B]">確かな策</span>を提案します。<br><br>	
+				そして貴社の財務健全性を強化し、<br>
+				長期的な成長戦略に貢献します。
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,136 @@
+---
+import { Image } from "astro:assets";
+import ceo from "../assets/3975_color.png";
+import onna_note from "../assets/onna_note.png";
+---
+
+<div class="flex flex-col items-center text-xl w-full py-10 font-bold">
+	<div class="md:w-[768px] flex flex-col text-center">
+		<div class="text-white text-3xl py-8">
+			<span class="text-4xl">「社保ダイエットプラン」</span>で、<br>社会保険料はこんなにも節減できます
+		</div>
+		<div class="bg-white p-5 rounded-lg">
+			<div class="flex flex-col text-center justify-center items-center">
+				<div
+					class="w-full bg-[#008F8F] text-white text-center py-1 md:w-[600px] rounded-lg"
+				>
+					導入後のシミュレーション
+				</div>
+				<div
+					class="rounded-lg border-4 border-[#008F8F] my-2 w-full md:w-[600px]"
+				>
+					<table class="w-full text-bas md:text-lg">
+						<thead class="table-auto">
+							<tr class="rounded-lg text-[#008F8F]">
+								<th class="border-b-2 border-r-2 border-[#008F8F]"
+									>あなたの報酬<br class="md:hidden" />(月額)</th
+								>
+								<th class="border-b-2 border-r-2 border-[#008F8F] text-center"
+									>導入前の<br class="md:hidden" />社会保険料</th
+								>
+								<th class="border-b-2 border-r-2 border-[#008F8F] text-center"
+									>節減差額<br class="md:hidden" />（合計）</th
+								>
+								<th class="border-b-2 border-[#008F8F]">節減率</th>
+							</tr>
+						</thead>
+						<tbody class="text-right font-bold">
+							<tr>
+								<td class="border-r-2 border-b-2 border-[#008F8F]"
+									>360万円(30万円/月)</td
+								>
+								<td class="border-r-2 border-b-2 border-[#008F8F]"
+									>1,075,680円</td
+								>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F] text-red-500"
+									>-358,560円</td
+								>
+								<td class="border-b-2 border-[#008F8F] text-red-500"
+									>-33.3％</td
+								>
+							</tr>
+							<tr>
+								<td class="border-r-2 border-b-2 border-[#008F8F]"
+									>600万円(50万円/月)</td
+								>
+								<td class="border-r-2 border-b-2 border-[#008F8F]"
+									>2,525,184円</td
+								>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F] text-red-500"
+									>-811,072円</td
+								>
+								<td class="border-b-2 border-[#008F8F] text-red-500"
+									>-40.7％</td
+								>
+							</tr>
+							<tr>
+								<td class="border-r-2 border-b-2 border-[#008F8F]"
+									>960万円(80万円/月)</td
+								>
+								<td class="border-r-2 border-b-2 border-[#008F8F]"
+									>2,480,160円</td
+								>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F] text-red-500"
+									>-1,235,762円</td
+								>
+								<td class="border-b-2 border-[#008F8F] text-red-500"
+									>-48.9％</td
+								>
+							</tr>
+							<tr>
+								<td class="border-r-2 border-b-2 border-[#008F8F]"
+									>1200万円(100万円/月)</td
+								>
+								<td class="border-r-2 border-b-2 border-[#008F8F]"
+									>2,789,208円</td
+								>
+								<td
+									class="border-r-2 border-b-2 border-[#008F8F] text-red-500"
+									>-1,499,785円</td
+								>
+								<td class="border-b-2 border-[#008F8F] text-red-500"
+									>-53.8％</td
+								>
+							</tr>
+							<tr>
+								<td class="border-r-2 border-[#008F8F]">1500万円(125万円/月)</td>
+								<td class="border-r-2 border-[#008F8F]"
+									>3,192,192円</td
+								>
+								<td class="border-r-2 border-[#008F8F] text-red-500"
+									>-1,902,768円</td
+								>
+								<td class="text-red-500">-59.6％</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="text-xs text-[#008F8F] text-right w-full pr-10">
+					※節減額は、法人所在地の都道府県、対象者の年齢や決算月、諸条件により変動します。
+				</div>
+			</div>
+		</div>
+		
+		<div class="bg-[#E9F6FD] rounded mt-10 px-10 flex flex-col items-center justify-center py-6">
+			<div class="text-2xl text-left left-0 mb-2tete">
+				ワンクリック無料相談で、<br>社会保険料節減額の試算が可能です
+			</div>
+			<div class="flex items-center pt-2">
+				<button
+					type="button"
+					class="text-white bg-[#FF8A22] hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 md:px-5 py-2.5 text-center"
+					>お問い合わせはこちら</button
+				>
+			</div>
+			<Image
+				class="absolute ml-[560px] mt-5"
+				src={onna_note}
+				alt="説明文"
+				height="150"
+			/>
+		</div>
+	</div>
+</div>
