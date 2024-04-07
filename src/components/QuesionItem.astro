@@ -10,7 +10,7 @@ const { question, anser } = Astro.props;
 <div class="divide-y divide-gray-100">
 	<details class="group">
 		<summary
-			class="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-medium text-secondary-900 group-open:text-primary-500"
+			class="flex cursor-pointer list-none items-center justify-between py-2 text-lg font-medium text-secondary-900 group-open:text-primary-500"
 		>
 			<div class="font-bold">
 				<span class="text-[#FF0000] text-xl">Q</span>
@@ -46,8 +46,8 @@ const { question, anser } = Astro.props;
 				</svg>
 			</div>
 		</summary>
-		<div class="flex pb-4 text-secondary-500 gap-4">
-			<div class="text-[#0588AF] text-2xl font-bold pt-1">
+		<div class="flex pb-2 text-secondary-500 gap-4 items-center">
+			<div class="text-[#0588AF] text-2xl font-bold pt-0.5">
 				A
 			</div>
 			<div class="font-sans">
@@ -55,5 +55,5 @@ const { question, anser } = Astro.props;
 			</div>
 		</div>
 	</details>
-	<hr class="h-0.5 my-3 bg-[#0588AF]" />
+	<hr class="h-0.5 my-2 bg-[#0588AF]" />
 </div>
