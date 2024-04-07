@@ -36,8 +36,6 @@ import parson01 from "../assets/17459_color.png";
 	<main class="flex flex-col justify-center mb-10 items-center w-full">
 		<div class="w-full pt-2">
 			<!-- 通常ヘッダー -->
-
-			<!-- <div class=" flex flex-col text-center"> -->
 			<div class="flex justify-center">
 				<div class="justify-between hidden md:flex md:w-[768px]">
 					<div class="flex items-center">
@@ -117,30 +115,24 @@ import parson01 from "../assets/17459_color.png";
 				</div>
 			</div>
 			<!-- モバイルトップ -->
-			<div class="flex md:hidden flex-col items-center px-3">
-				<div class="bg-white text-red-500 font-bold text-xl px-3 py-2">
-					個人事業主(フリーランス)の方、必見!
+			<div class="flex md:hidden flex-col items-center">
+				<div class="text-white font-bold text-2xl px-3 py-2">
+					会社経営者様、社長・役員必見！
 				</div>
-				<div class="flex justify-center mt-5">
+				<div class="flex justify-center mt-5 text-white font-bold text-3xl">
 					<div>
-						<div class="font-bold text-3xl">社会保険料が</div>
-						<div
-							class="text-4xl font-black logo_background_white w-[270px]"
-						>
-							<span class="text-8xl font-black mt-0">30</span
-							>％/年 以上
+						<div class="font-bold">社会保険料が</div>
+						<div class="font-black mb-2">
+							年間最大
+							<span class="text-[#FAFF00] text-5xl">60</span
+							>％以上
 						</div>
-						<div
-							class="text-4xl font-bold tracking-[-2px] logo_background_white mb-5"
-						>
-							安くなります！
-						</div>
+						<div>節減できます！</div>
 					</div>
 					<div class="flex items-end">
-						<Image src={person01} alt="説明文" width={300} />
+						<Image src={person01} alt="説明文" width={150} />
 					</div>
 				</div>
-				<ContactButton />
 			</div>
 
 			
