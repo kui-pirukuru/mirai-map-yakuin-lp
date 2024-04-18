@@ -60,6 +60,11 @@ const { title } = Astro.props;
 		min-height: 100vh;
 		margin: 0;
 		-webkit-text-size-adjust: 100%;
+		scrollbar-width: none;
+	}
+	/*スクロールバー非表示（Chrome・Safari）*/
+	body::-webkit-scrollbar{
+		display:none;
 	}
 	/* code {
 		font-family:
