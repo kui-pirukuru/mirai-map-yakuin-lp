@@ -33,7 +33,7 @@ import parson01 from "../assets/17459_color.png";
 ---
 
 <Layout title="社会保険料を効果的に節減 みらいマップ株式会社">
-	<main class="flex flex-col justify-center mb-10 items-center w-full">
+	<main class="flex flex-col justify-center items-center w-full">
 		<div class="w-full pt-2">
 			<!-- 通常ヘッダー -->
 			<div class="flex justify-center">
@@ -62,14 +62,13 @@ import parson01 from "../assets/17459_color.png";
 						</div>
 					</div>
 					<div class="flex items-center">
-						<a
-							href="#contact"
-						>
+						<a href="#contact">
 							<button
 								type="button"
 								class="text-white bg-[#FF8A22] hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 md:px-5 py-2.5 text-center"
 								>WEBからご予約</button
-							></a>
+							></a
+						>
 					</div>
 				</div>
 			</div>
@@ -138,7 +137,7 @@ import parson01 from "../assets/17459_color.png";
 				</div>
 			</div>
 
-			<Nayami />
+			<!-- <Nayami />
 			<Koudo />
 			<Kokuban />
 			<ThreeFeatures />
@@ -146,8 +145,8 @@ import parson01 from "../assets/17459_color.png";
 			<SakugenSeikou />
 			<Voice />
 			<Akusyu />
-			<Aisatu />
-			<div class="bg-white">
+			<Aisatu /> -->
+			<!-- <div class="bg-white">
 				<div class="flex flex-col py-10 items-center px-5 text-center">
 					<div class="text-3xl font-black text-[#008F8F] py-2 mb-5">
 						導入費用について
@@ -184,6 +183,8 @@ import parson01 from "../assets/17459_color.png";
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="bg-white">
 				<div class="bg-white flex flex-col items-center">
 					<div class="md:w-[768px]">
 						<div
@@ -236,6 +237,9 @@ import parson01 from "../assets/17459_color.png";
 					あなたのビジネスをサポートできるチャンスを、<br />
 					私たちは心から楽しみにしています。
 				</div>
+			</div> -->
+			<!-- 赤帯 -->
+			<!-- <div class="bg-white">
 				<div class="flex flex-col items-center">
 					<Image
 						src={offer_01_pc}
@@ -259,10 +263,11 @@ import parson01 from "../assets/17459_color.png";
 						</div>
 					</div>
 				</div>
-
+			</div>
+			<div class="bg-white">
 				<div
 					id="contact"
-					class="text-black w-full text-center py-5 flex flex-col items-center"
+					class="contaner text-black text-center py-5 flex flex-col justify-center items-center"
 				>
 					<div class="text-3xl font-black text-[#0588AF]">
 						無料相談・お問い合わせ<br />受付フォーム
@@ -293,11 +298,10 @@ import parson01 from "../assets/17459_color.png";
 						/>
 						※申し訳ありませんが、年金受給者・無職・会社従業員の方からの相談はお受けできませんのでご了承くださいませ。
 					</div>
-					<div></div>
 				</div>
-				<div>
-					<MailForm />
-				</div>
+			</div> -->
+			<div class="bg-white flex justify-center flex-col items-center">
+				<MailForm />
 				<!-- 黒帯 -->
 				<div class="bg-[#333333]">
 					<div
@@ -308,7 +312,7 @@ import parson01 from "../assets/17459_color.png";
 						<Image src={kokuho} alt="説明文" width={210} />
 					</div>
 				</div>
-				<div class="text-xl font-sans text-center my-5 px-5">
+				<div class="text-xl font-sans text-center mt-5 mb-8 px-5">
 					Copyright © みらいマップ株式会社 <br
 						class="md:hidden"
 					/>All rights reserved.
