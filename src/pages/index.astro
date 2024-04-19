@@ -34,7 +34,8 @@ import parson01 from "../assets/17459_color.png";
 
 <Layout title="社会保険料を効果的に節減 みらいマップ株式会社">
 	<main class="flex flex-col justify-center items-center w-full">
-		<div class="w-full pt-2">
+		<div class="w-full pb-2">
+			<div class="w-full bg-[#008f8f] pb-2">
 			<!-- 通常ヘッダー -->
 			<div class="flex justify-center">
 				<div class="justify-between hidden md:flex md:w-[768px]">
@@ -72,20 +73,8 @@ import parson01 from "../assets/17459_color.png";
 					</div>
 				</div>
 			</div>
-			<!-- モバイルヘッダー -->
-			<div class="flex justify-between md:hidden px-5 my-5">
-				<Image src={logo_sp} alt="説明文" width="205" />
-				<div class="flex">
-					<a href="tel:0825073230" class="p-2">
-						<Image src={head_tel_sp} alt="説明文" width="56" />
-					</a>
-					<a href="#contact" class="p-2 py-3">
-						<Image src={head_email_sp} alt="説明文" width="56" />
-					</a>
-				</div>
-			</div>
 			<!-- Top -->
-			<div class="container mx-auto hidden md:flex justify-center my-5">
+			<div class="container mx-auto hidden md:flex justify-center my-5 bg-[#008f8f]">
 				<div class="flex flex-col">
 					<div
 						class="text-white font-bold text-xl md:text-2xl py-2 flex-none"
@@ -114,8 +103,20 @@ import parson01 from "../assets/17459_color.png";
 					/>
 				</div>
 			</div>
+			<!-- モバイルヘッダー -->
+			<div class="flex justify-between md:hidden px-5 my-5 bg-[#008f8f]">
+				<Image src={logo_sp} alt="説明文" width="205" />
+				<div class="flex">
+					<a href="tel:0825073230" class="p-2">
+						<Image src={head_tel_sp} alt="説明文" width="56" />
+					</a>
+					<a href="#contact" class="p-2 py-3">
+						<Image src={head_email_sp} alt="説明文" width="56" />
+					</a>
+				</div>
+			</div>
 			<!-- モバイルトップ -->
-			<div class="container flex md:hidden flex-col items-center">
+			<div class="container flex md:hidden flex-col items-center bg-[#008f8f]">
 				<div class="text-white font-bold text-2xl px-3 py-2">
 					会社経営者様、社長・役員必見！
 				</div>
@@ -136,6 +137,8 @@ import parson01 from "../assets/17459_color.png";
 					</div>
 				</div>
 			</div>
+			</div>
+
 
 			<Nayami />
 			<Koudo />
