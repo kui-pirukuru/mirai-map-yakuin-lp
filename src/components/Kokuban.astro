@@ -4,20 +4,27 @@ import kokuban from "../assets/9435_color.png";
 
 ---
 
-<div class="bg-white h-[450px] md:h-[550px] font-bold flex justify-center">
+<div class="bg-white h-[430px] md:h-[550px] font-bold flex justify-center">
 	<div class="md:w-[768px] flex flex-col items-center">
 		<div class="text-[#E6607B] text-2xl py-10 text-center">
-			それは<br class="md:hidden"/><span class="text-4xl">「社保ダイエットプラン」</span><br class="md:hidden"/>です。
+			それは<br class="md:hidden"/><span class="text-3xl md:text-4xl">「社保ダイエットプラン」</span><br class="md:hidden"/>です。
 		</div>
 		<div class="w-full flex justify-center">
 			<div class="absolute">
 				<Image
 				src={kokuban}
 				alt="説明文"
+				height="200"
+				class="md:hidden"
+				/>
+				<Image
+				src={kokuban}
+				alt="説明文"
 				height="350"
+				class="hidden md:flex"
 				/>
 			</div>
-			<div class="absolute mt-2 md:mt-8 font-bold mr-[110px] md:mr-[175px] md:text-2xl">
+			<div class="absolute mt-2 md:mt-8 font-bold mr-[110px] md:mr-[175px] text-sm md:text-2xl">
 				私たちの「社保ダイエットプラン」は、<br>
 				その悩みを解決するための<br>
 				<span class="text-[#E6607B]">確かな策</span>を提案します。<br><br>	

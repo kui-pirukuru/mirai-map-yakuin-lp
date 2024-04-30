@@ -12,7 +12,7 @@ const { question, anser } = Astro.props;
 		<summary
 			class="flex cursor-pointer list-none items-center justify-between py-2 text-lg font-medium text-secondary-900 group-open:text-primary-500"
 		>
-			<div class="font-bold">
+			<div class="font-bold text-left">
 				<span class="text-[#FF0000] text-xl">Q</span>
 				{question}
 			</div>
@@ -47,9 +47,7 @@ const { question, anser } = Astro.props;
 			</div>
 		</summary>
 		<div class="flex pb-2 text-secondary-500 gap-4 items-center">
-			<div class="text-[#0588AF] text-2xl font-bold pt-0.5">
-				A
-			</div>
+			<div class="text-[#0588AF] text-2xl font-bold pt-0.5">A</div>
 			<div class="font-sans">
 				{anser}
 			</div>
@@ -57,3 +55,10 @@ const { question, anser } = Astro.props;
 	</details>
 	<hr class="h-0.5 my-2 bg-[#0588AF]" />
 </div>
+
+<style>
+	summary::-webkit-details-marker {
+		/* Safariで表示されるデフォルトの三角形アイコンを消します */
+		display: none;
+	}
+</style>

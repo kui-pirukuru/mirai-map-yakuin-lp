@@ -4,16 +4,33 @@ import ceo from "../assets/3975_color.png";
 import note from "../assets/note.png";
 ---
 
-
-<div class="flex flex-col items-center text-xl w-full py-10 font-bold bg-[#FBDA32]">
-	<div class="md:w-[768px] flex flex-col text-center px-2 md:px-0">
-		<div class="bg-white rounded-2xl px-8 py-8 text-left">
-			初めまして、<br class="md:hidden">みらいマップ株式会社<br class="md:hidden">　代表の徳永吉一です。<br>
-			私たちは創業以来一貫して<br class="md:hidden">会社の財務体質の強化と経費削減、<br>
-			経営者や役員の手元資金の<br class="md:hidden">最大化に努めてまいりました。
+<div
+	class="flex flex-col items-center text-xl w-full py-10 font-bold bg-[#FBDA32]"
+>
+	<div
+		class="md:w-[768px] flex flex-col text-center px-2 md:px-0 items-center"
+	>
+		<div
+			class="bg-white rounded-2xl p-3 md:px-8 md:py-8 text-left w-[400px] md:w-full"
+		>
+			初めまして、<br class="md:hidden" />みらいマップ株式会社<br
+				class="md:hidden"
+			/>　代表の徳永吉一です。<br />
+			私たちは創業以来一貫して<br
+				class="md:hidden"
+			/>会社の財務体質の強化と経費削減、<br />
+			経営者や役員の手元資金の<br
+				class="md:hidden"
+			/>最大化に努めてまいりました。
 		</div>
 		<Image
-			class="absolute ml-[310px] md:ml-[580px] mt-[100px] md:mt-2"
+			class="absolute md:hidden ml-[310px] mt-[100px] md:mt-2"
+			src={ceo}
+			alt="説明文"
+			height="140"
+		/>
+		<Image
+			class="absolute hidden md:flex md:ml-[580px] mt-[80px] md:mt-2"
 			src={ceo}
 			alt="説明文"
 			height="170"
@@ -21,45 +38,50 @@ import note from "../assets/note.png";
 		<div class="px-2 md:px-16 flex flex-col gap-6 mt-14">
 			<div class="text-left flex flex-row items-center justify-center">
 				<div class="text-xl md:text-2xl">
-					<span class="text-xl md:text-4xl">「社保ダイエットプラン」</span>には<br>
+					<span class="text-xl md:text-4xl"
+						>「社保ダイエットプラン」</span
+					>には<br />
 					<span class="ml-4 md:ml-8">３つの特徴があります</span>
 				</div>
-				<Image
-					src={note}
-					alt="人"
-					height="90"
-				/>
+				<Image src={note} alt="人" height="90" />
 			</div>
-				<div class="bg-white rounded-lg flex flex-row md:h-20 py-2 items-center">
-					<div class="text-5xl w-24 text-[#BA2644] font-bold pb-2">
-						1
-					</div>
-					<div class="text-lg text-left flex-1">
-					全てのプロセスが社会保険、<br class="md:hidden">税務のルール内で行われ、<br>
-					法令遵守のもとに安心して<br class="md:hidden">節減を図ることができます。
-					</div>
+			<div
+				class="bg-white rounded-lg flex flex-row md:h-20 py-2 items-center"
+			>
+				<div class="text-5xl w-24 text-[#BA2644] font-bold pb-2">1</div>
+				<div class="text-lg text-left flex-1">
+					全てのプロセスが社会保険、<br
+						class="sm:hidden"
+					/>税務のルール内で行われ、<br />
+					法令遵守のもとに安心して<br
+						class="sm:hidden"
+					/>節減を図ることができます。
 				</div>
-				
-				<div class="bg-white rounded-lg flex flex-row md:h-20 py-2 items-center">
-					<div class="text-5xl w-24 text-[#BA2644] font-bold pb-2">
-						2
-					</div>
-					<div class="text-lg text-left flex-1">
-						貴社専任の社会保険労務士や<br class="md:hidden">税理士は変更不要で、<br>
-						節減策を導入できます。
-					</div>
+			</div>
+
+			<div
+				class="bg-white rounded-lg flex flex-row md:h-20 py-2 items-center"
+			>
+				<div class="text-5xl w-24 text-[#BA2644] font-bold pb-2">2</div>
+				<div class="text-lg text-left flex-1">
+					貴社専任の社会保険労務士や<br
+						class="sm:hidden"
+					/>税理士は変更不要で、<br />
+					節減策を導入できます。
 				</div>
-				
-				<div class="bg-white rounded-lg flex flex-row md:h-20 py-2 items-center">
-					<div class="text-5xl w-24 text-[#BA2644] font-bold pb-2">
-						3
-					</div>
-					<div class="text-lg text-left flex-1">
-						会社経営者、役員の年収を下げることなく社会保険料を節減し、<br>
-						法人経費削減と個人の手取額増加を実現できます。
-					</div>
+			</div>
+
+			<div
+				class="bg-white rounded-lg flex flex-row md:h-20 py-2 items-center"
+			>
+				<div class="text-5xl w-24 text-[#BA2644] font-bold pb-2">3</div>
+				<div class="text-lg text-left flex-1">
+					会社経営者、役員の年収を下げることなく社会保険料を節減し、<br
+					/>
+					法人経費削減と個人の手取額増加を実現できます。
 				</div>
-			<div>
+			</div>
+			<div></div>
 		</div>
 	</div>
 </div>

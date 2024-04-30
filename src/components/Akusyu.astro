@@ -5,7 +5,7 @@ import AkusyuImg from "../assets/7690_color.png";
 ---
 
 <div class="bg-white flex flex-col items-center">
-	<div class="md:w-[768px] flex justify-center gap-8">
+	<div class="md:w-[768px] flex justify-center gap-8 py-2">
 		<div class="flex items-center flex-col justify-center">
 			<div class="font-bold text-xl mb-2 ml-5 md:ml-0">
 				財務体質強化のために<br class="md:hidden">解決策をご提案
@@ -17,6 +17,7 @@ import AkusyuImg from "../assets/7690_color.png";
 					>お問い合わせはこちら</button>
 			</div>
 		</div>
-		<Image class="mt-3" src={AkusyuImg} alt="説明文" height="142" />
+		<Image class="mt-3 hidden sm:flex" src={AkusyuImg} alt="説明文" height="142" />
+		<Image class="mt-3 sm:hidden" src={AkusyuImg} alt="説明文" height="100" />
 	</div>
 </div>
