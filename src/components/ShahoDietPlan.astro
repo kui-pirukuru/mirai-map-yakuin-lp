@@ -4,11 +4,11 @@ import onna_note from "../assets/onna_note.png";
 ---
 
 <div
-	class="flex flex-col items-center text-xl w-full py-10 font-bold bg-[#008f8f]"
+	class="flex flex-col items-center text-xl w-full pb-4 sm:py-10 font-bold bg-[#008f8f]"
 >
-	<div class="md:w-[768px] flex flex-col text-center">
-		<div class="text-white text-2xl md:text-3xl py-8">
-			<span class="text-3xl md:text-4xl">「社保ダイエットプラン」</span
+	<div class="w-full sm:w-[668px] md:w-[768px] flex flex-col text-center">
+		<div class="text-white text-xl md:text-3xl py-8">
+			<span class="text-2xl md:text-4xl">「社保ダイエットプラン」</span
 			>で、<br />社会保険料はこんなにも節減できます
 		</div>
 		<div class="bg-white px-2 sm:px-5 py-5 md:p-5 rounded-lg mx-2">
@@ -47,7 +47,7 @@ import onna_note from "../assets/onna_note.png";
 								>
 							</tr>
 						</thead>
-						<tbody class="text-right font-bold text-xs sm:text-lg">
+						<tbody class="text-right font-bold text-sm sm:text-lg">
 							<tr>
 								<td
 									class="border-r-2 border-b-2 border-[#008F8F]"
@@ -147,28 +147,28 @@ import onna_note from "../assets/onna_note.png";
 		</div>
 
 		<div
-			class="bg-[#E9F6FD] rounded mt-10 mx-5 md:px-10 flex flex-col md:items-center py-3 md:py-6"
+			class="bg-[#E9F6FD] rounded mt-10 mx-5 md:px-10 flex flex-col sm:items-center py-3 md:py-6 sm:w-auto md:w-auto"
 		>
 			<div class="text-2xl text-left mb-2 pl-5 md:pl-0">
 				ワンクリック無料相談で、<br />社会保険料節減額の試算が<br
-					class="md:hidden"
+					class="sm:hidden"
 				/>可能です
 			</div>
-			<div class="flex items-center pt-2 pl-10 md:pl-0">
+			<div class="flex items-center pt-2 pl-10 sm:pl-0">
 				<button
 					type="button"
-					class="text-white bg-[#FF8A22] hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 md:px-5 py-2.5 text-center"
+					class="text-white bg-[#FF8A22] hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 sm:px-5 py-2.5 text-center"
 					>お問い合わせはこちら</button
 				>
 			</div>
 			<Image
-				class="absolute hidden md:flex ml-[270px] md:ml-[560px] mt-5"
+				class="absolute hidden sm:flex ml-[270px] sm:ml-[530px] mt-5"
 				src={onna_note}
 				alt="説明文"
 				height="150"
 			/>
 			<Image
-				class="absolute ml-[270px] sm:ml-[320px] mt-14 md:hidden"
+				class="absolute ml-[270px] sm:ml-[320px] mt-14 sm:hidden"
 				src={onna_note}
 				alt="説明文"
 				height="120"
