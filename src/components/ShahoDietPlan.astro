@@ -149,10 +149,8 @@ import onna_note from "../assets/onna_note.png";
 		<div
 			class="bg-[#E9F6FD] rounded mt-10 mx-5 md:px-10 flex flex-col sm:items-center py-3 md:py-6 sm:w-auto md:w-auto"
 		>
-			<div class="text-2xl text-left mb-2 pl-5 md:pl-0">
-				ワンクリック無料相談で、<br />社会保険料節減額の試算が<br
-					class="sm:hidden"
-				/>可能です
+			<div class="text-base sm:text-2xl text-left mb-2 pl-5 md:pl-0">
+				ワンクリック無料相談で、<br />社会保険料節減額の試算が可能です
 			</div>
 			<div class="flex items-center pt-2 pl-10 sm:pl-0">
 				<button
@@ -162,16 +160,16 @@ import onna_note from "../assets/onna_note.png";
 				>
 			</div>
 			<Image
+				class="absolute ml-[270px] sm:ml-[320px] mt-8 sm:hidden"
+				src={onna_note}
+				alt="説明文"
+				height="100"
+			/>
+			<Image
 				class="absolute hidden sm:flex ml-[270px] sm:ml-[530px] mt-5"
 				src={onna_note}
 				alt="説明文"
 				height="150"
-			/>
-			<Image
-				class="absolute ml-[270px] sm:ml-[320px] mt-14 sm:hidden"
-				src={onna_note}
-				alt="説明文"
-				height="120"
 			/>
 		</div>
 	</div>
