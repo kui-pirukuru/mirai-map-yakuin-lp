@@ -62,12 +62,9 @@ import person01 from "../assets/person01.png";
 				class="flex justify-center mt-5 font-bold text-4xl text-white flex-col"
 			>
 				<div class="">社会保険料が</div>
-				<div class="font-black mb-2">
-					年間最大<span class="text-[#FAFF00] text-6xl"
-						>60<span class="text-4xl">％</span></span
-					>以上
+				<div class="font-black mb-2">年間最大<span class="text-[#FAFF00] text-6xl">60<span class="text-4xl">％</span></span>以上
 				</div>
-				<div>節減できます！</div>
+				<div class="mt-217">節減できます！</div>
 			</div>
 		</div>
 		<div class="flex items-end">
@@ -84,17 +81,29 @@ import person01 from "../assets/person01.png";
 	<div
 		class="flex justify-between md:hidden px-5 pt-5 mb-5 bg-[#008f8f]"
 	>
-		<Image src={logo_sp} alt="説明文" 
-		width={160} />
+	<Image src={logo_sp} alt="説明文" 
+	width={190} class="sm:hidden"/>
+	<Image src={logo_sp} alt="説明文" 
+	width={290} class="hidden sm:flex"/>
 		<div class="flex">
 			<a href="tel:0825073230" class="p-2">
-				<Image src={head_tel_sp} alt="説明文" width="56" />
+				<Image src={head_tel_sp} alt="説明文" width="35" 
+				class="sm:hidden"/>
+				<Image src={head_tel_sp} alt="説明文" width="65" 
+				class="hidden sm:flex"/>
 			</a>
 			<a href="#contact" class="p-2 py-3">
 				<Image
 					src={head_email_sp}
 					alt="説明文"
-					width={56}
+					width={35}
+					class="sm:hidden"
+				/>
+				<Image
+					src={head_email_sp}
+					alt="説明文"
+					class="hidden sm:flex"
+					width={65}
 				/>
 			</a>
 		</div>
@@ -111,13 +120,10 @@ import person01 from "../assets/person01.png";
 		>
 			<div class="pb-5">
 				<div class="font-bold text-2xl sm:text-4xl">社会保険料が</div>
-				<div class="font-black mb-2 text-2xl sm:text-4xl">
-					年間最大
-					<span class="text-[#FAFF00] text-4xl sm:text-7xl"
-						>60<span class="text-2xl sm:text-3xl">％</span></span
+				<div class="font-bold mb-2 text-2xl sm:text-4xl">年間最大<span class="text-[#FAFF00] text-4xl sm:text-6xl">60<span class="text-2xl sm:text-3xl">％</span></span
 					>以上
 				</div>
-				<div class="text-2xl sm:text-4xl">節減できます！</div>
+				<div class="text-2xl sm:text-4xl sm:mt-6">節減できます！</div>
 			</div>
 			<div class="flex items-end">
 				<Image src={person01} alt="説明文" width={150} class="pl-2 hidden sm:flex" />
