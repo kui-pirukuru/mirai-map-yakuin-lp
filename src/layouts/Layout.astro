@@ -20,7 +20,7 @@ const { title } = Astro.props;
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<!-- <meta name="viewport" content="width=460" /> -->
+		<!-- <meta name="viewport" content="width=460" /> -->ez
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<!--メールフォームプロ用CSS-->
 		<link rel="stylesheet" href="mfp.statics/mailformpro.css" type="text/css">
@@ -32,6 +32,9 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	*, *::before, *::after {
+		box-sizing: border-box;
+	}
 	:root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
@@ -61,9 +64,6 @@ const { title } = Astro.props;
 		min-height: 100vh;
 		margin: 0;
 		-webkit-text-size-adjust: 100%;
-	}
-	.scroll-bar-off::-webkit-scrollbar {  /* Chrome, Safari 対応 */
-		overflow: visible;
 	}
 
 </style>
