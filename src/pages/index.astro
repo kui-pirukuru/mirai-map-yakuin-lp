@@ -16,6 +16,7 @@ import Voice from "../components/Voice.astro";
 import Akusyu from "../components/Akusyu.astro";
 import { Image } from "astro:assets";
 import kokuho from "../assets/bnn_kokuho_s.jpg";
+import fax from "../assets/fax.svg";
 import shaho from "../assets/bnn_shaho_s.jpg";
 import yakuin from "../assets/bnn_yakuin_s.jpg";
 import contact02_tel_pc from "../assets/contact02_tel_pc.png";
@@ -121,9 +122,9 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 			<div class="bg-white">
 				<div
 					id="contact"
-					class="contaner text-black text-center py-5 flex flex-col justify-center items-center"
+					class=" text-black text-center py-5 flex flex-col justify-center items-center mx-1"
 				>
-					<div class="text-3xl font-black text-[#0588AF]">
+					<div class="text-2xl sm:text-4xl font-black text-[#0588AF]">
 						無料相談・お問い合わせ<br />受付フォーム
 					</div>
 					<div class="text-md mt-5 comment">
@@ -137,14 +138,37 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 							class="md:hidden"
 						/>内容をご確認ください。
 					</div>
-					<Image
-						src={contact02_tel_pc}
-						alt="説明文"
-						height={100}
-						class="px-5"
-					/>
 					<div
-						class="text-sm font-bold text-red-500 leading-6 text-left px-5"
+						class="w-[340px] sm:w-[640px] border-4 border-[#088DB4] rounded-lg px-2 py-4 flex flex-col sm:flex-row sm:justify-center sm:items-center"
+					>
+						<div class="flex flex-col gap-0.5">
+							<div class="text-lg font-bold">
+								お電話からご予約・お問い合わせ
+							</div>
+							<div class="text-4xl font-black text-[#0588AF]">
+								☎<span class="px-1">082-507-3231</span>
+							</div>
+							<div class="font-bold">平日 9:00 ～ 18:00</div>
+						</div>
+						<hr class="flex sm:hidden h-px my-2 bg-[#088DB4] border-0" />
+						<div class="hidden sm:flex bg-[#088DB4] h-20 w-0.5 sm:mx-6 "></div>
+						<div>
+							<div class="text-lg font-bold">
+								Faxからご予約・お問い合わせ
+							</div>
+							<div class="text-4xl font-black text-[#0588AF] flex items-center justify-center">
+								<Image
+									src={fax}
+									alt="説明文"
+									height={50}
+								/>
+								<div>082-507-3231</div>
+							</div>
+							<div class="font-bold">24時間受付中</div>
+						</div>
+					</div>
+					<div
+						class=" text-sm font-bold text-red-500 leading-6 text-left px-5"
 					>
 						※お申込みは<br
 							class="md:hidden"
