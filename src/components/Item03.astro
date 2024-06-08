@@ -1,0 +1,97 @@
+---
+import { Image } from "astro:assets";
+import heart from "../assets/heart.png";
+import car from "../assets/car.png";
+import kouji from "../assets/kouji.png";
+import scop from "../assets/scop.png";
+import doc from "../assets/doc.png";
+import money from "../assets/monery.png";
+import person_03 from "../assets/person_03.png";
+---
+
+<div class="bg-[#947D68] text-xs pt-5 pb-8 px-2 text-white">
+	<div class="max-w-3xl mx-auto text-2xl font-bold text-center">
+		いまの対策に<br /><span class="text-5xl">『 満足 』</span><br
+		/>していますか？
+	</div>
+	<div class="max-w-3xl mx-auto text-base text-center my-5">
+		よくある例として<br />以下のような対策が挙げられます。<br />
+		皆様の会社でも、<br />上記の策に頼っていませんか？
+	</div>
+	<div class="flex flex-wrap gap-2 items-center justify-center">
+		<div class="text-base font-bold">
+			<div
+				class="border-white border-4 rounded-lg w-[170px] h-[140px] px-2 flex flex-col items-center justify-center gap-3"
+			>
+				<div class="text-white text-center">
+					決算月の高級車両や<br />
+					事業用車両の購入
+				</div>
+				<div class="flex justify-center gap-4">
+					<Image src={car} alt="" width={40} />
+				</div>
+			</div>
+		</div>
+		<div class="text-base font-bold">
+			<div
+				class="border-white border-4 rounded-lg w-[170px] h-[140px] px-2 flex flex-col items-center justify-center gap-3"
+			>
+				<div class="text-white text-center">オフィスの改装工事</div>
+				<div class="flex justify-center gap-4">
+					<Image src={scop} alt="" width={40} />
+					<Image src={kouji} alt="" width={40} />
+				</div>
+			</div>
+		</div>
+		<div class="text-base font-bold">
+			<div
+				class="border-white border-4 rounded-lg w-[170px] h-[140px] px-2 flex flex-col items-center justify-center gap-3"
+			>
+				<div class="text-white text-center">
+					全社員への<br />
+					決算賞与の支給
+				</div>
+				<div class="flex justify-center gap-4">
+					<Image src={money} alt="" width={40} />
+				</div>
+			</div>
+		</div>
+		<div class="text-base font-bold">
+			<div
+				class="border-white border-4 rounded-lg w-[170px] h-[140px] px-2 flex flex-col items-center justify-center gap-3"
+			>
+				<div class="text-white text-center leading-5">
+					会社案内や<br />
+					パンフレットの<br />
+					大量制作
+				</div>
+				<div class="flex justify-center gap-4">
+					<Image src={doc} alt="" width={40} />
+				</div>
+			</div>
+		</div>
+		<div class="text-base font-bold">
+			<div
+				class="border-white border-4 rounded-lg w-[170px] h-[140px] px-2 flex flex-col items-center justify-center gap-3"
+			>
+				<div class="text-white text-center leading-5">
+					高額なかけ捨て型
+					<br />
+					生命保険への加入
+				</div>
+				<div class="flex justify-center gap-4">
+					<Image src={heart} alt="" width={40} />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="flex mt-6">
+		<div class="font-bold text-sm">
+			これらの策は一見、<br />節税に貢献するかのように思えますが、<br />
+			実際にはコストパフォーマンスや<br />長期的な効果に疑問符がつきます。
+		</div>
+		<div>
+			<Image src={person_03} alt="" width={100} />
+		</div>
+	</div>
+</div>

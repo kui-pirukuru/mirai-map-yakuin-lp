@@ -11,6 +11,10 @@ import Header from "../components/Header.astro";
 import Kokuban from "../components/Kokuban.astro";
 import Koudo from "../components/Koudo.astro";
 import Nayami from "../components/Nayami.astro";
+import Item01 from "../components/Item01.astro";
+import Item02 from "../components/Item02.astro";
+import Item03 from "../components/Item03.astro";
+import Item04 from "../components/Item04.astro";
 import Aisatu from "../components/Aisatu.astro";
 import Voice from "../components/Voice.astro";
 import Akusyu from "../components/Akusyu.astro";
@@ -26,8 +30,67 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 <Layout title="社会保険料を効果的に節減 みらいマップ株式会社">
 	<main class="flex flex-col justify-center items-center w-full">
 		<div class="w-full pb-2">
-			<Header />
-			<Nayami />
+			<Item01 />
+			<Item02 />
+			<Item03 />
+			<Item04 />
+			<!-- <Header /> -->
+			<!-- <div class="h-[1200px] bg-[#EFD4CE] flex flex-col">
+				<div>
+					<div>ご利用いただいたお客さまの声</div>
+					<div class="text-center">
+						たくさんの嬉しいお声をいただいています。<br
+						/>その一部をご紹介します。
+					</div>
+					<div class="flex items-center justify-center gap-2">
+						<div class="relative w-[170px]">
+							<div
+								class="text-4xl font-bold absolute text-center w-full"
+							>
+								CASE 1
+							</div>
+							<div class="h-[20px]"></div>
+							<div
+								class="bg-[#FFFDC6] rounded-lg text-xs px-3 pt-[30px] h-[400px]"
+							>
+								<div class="font-bold">
+									サービス業をされている経営者様
+								</div>
+								<div class="bg-[#F5ED00] font-bold">
+									役員1名、決算月約 350 万円 増額
+								</div>
+								<div>
+									当初、本節税策が法に触れるものではないかと疑念を抱いていましたが、当社顧問税理士が立ち会う中で説明を受け、すぐにその合法性に納得しました。この策を実施したことで、計画的に貯蓄を増やし、それを事業資金のみならず、子供の教育費さらには住宅ローンの返済にも活用できるようになったことは、大きなメリットと感じています。知らなかったことが損であったことを痛感しています。
+								</div>
+							</div>
+						</div>
+						<div class="relative w-[170px]">
+							<div
+								class="text-4xl font-bold absolute text-center w-full"
+							>
+								CASE 1
+							</div>
+							<div class="h-[20px]"></div>
+							<div
+								class="bg-[#FFFDC6] rounded-lg text-xs px-3 pt-[30px] h-[400px]"
+							>
+								<div class="font-bold">
+									サービス業をされている経営者様
+								</div>
+								<div class="bg-[#F5ED00] font-bold">
+									役員1名、決算月約 350 万円 増額
+								</div>
+								<div>
+									当初、本節税策が法に触れるものではないかと疑念を抱いていましたが、当社顧問税理士が立ち会う中で説明を受け、すぐにその合法性に納得しました。この策を実施したことで、計画的に貯蓄を増やし、それを事業資金のみならず、子供の教育費さらには住宅ローンの返済にも活用できるようになったことは、大きなメリットと感じています。知らなかったことが損であったことを痛感しています。
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div> -->
+			<!-- <Nayami /> -->
+			<!--
 			<Koudo />
 			<Kokuban />
 			<ThreeFeatures />
@@ -122,7 +185,7 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 			<div class="bg-white">
 				<div
 					id="contact"
-					class=" text-black text-center py-5 flex flex-col justify-center items-center mx-1"
+					class="text-black text-center py-5 flex flex-col justify-center items-center mx-1"
 				>
 					<div class="text-2xl sm:text-4xl font-black text-[#0588AF]">
 						無料相談・お問い合わせ<br />受付フォーム
@@ -150,25 +213,28 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 							</div>
 							<div class="font-bold">平日 9:00 ～ 18:00</div>
 						</div>
-						<hr class="flex sm:hidden h-px my-2 bg-[#088DB4] border-0" />
-						<div class="hidden sm:flex bg-[#088DB4] h-20 w-0.5 sm:mx-6 "></div>
+						<hr
+							class="flex sm:hidden h-px my-2 bg-[#088DB4] border-0"
+						/>
+						<div
+							class="hidden sm:flex bg-[#088DB4] h-20 w-0.5 sm:mx-6"
+						>
+						</div>
 						<div>
 							<div class="text-lg font-bold">
 								Faxからご予約・お問い合わせ
 							</div>
-							<div class="text-4xl font-black text-[#0588AF] flex items-center justify-center">
-								<Image
-									src={fax}
-									alt="説明文"
-									height={50}
-								/>
+							<div
+								class="text-4xl font-black text-[#0588AF] flex items-center justify-center"
+							>
+								<Image src={fax} alt="説明文" height={50} />
 								<div>082-507-3231</div>
 							</div>
 							<div class="font-bold">24時間受付中</div>
 						</div>
 					</div>
 					<div
-						class=" text-sm font-bold text-red-500 leading-6 text-left px-5"
+						class="text-sm font-bold text-red-500 leading-6 text-left px-5"
 					>
 						※お申込みは<br
 							class="md:hidden"
@@ -198,7 +264,7 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 						class="md:hidden"
 					/>All rights reserved.
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</main>
 

@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+import heart from "../assets/heart.png";
+import car from "../assets/car.png";
+import kouji from "../assets/kouji.png";
+import scop from "../assets/scop.png";
+import doc from "../assets/doc.png";
+import money from "../assets/monery.png";
+import person_02 from "../assets/3975_color.png";
+import persons_01 from "../assets/persons_01.png";
+import ContactButton from "../components/ContactButton.astro";
+---
+
+<div class="bg-[#EFD4CE] text-xs pt-5 pb-8 px-2">
+	<div class="max-w-3xl mx-auto text-xl font-bold text-center">
+		では、実際に効果の高い<br /><span
+			class="text-4xl underline decoration-8 decoration-yellow-200 underline-offset-[-4px]"
+			>節税対策</span
+		>とは何か？
+	</div>
+	<div class="flex justify-center my-5">
+		<Image src={persons_01} width={300} alt="heart" />
+	</div>
+	<div class="font-bold text-center text-xl mb-4">
+		それは、<br /><span class="text-4xl">役員報酬の増額</span><br />です！
+	</div>
+	<div
+		class="flex bg-white rounded-lg font-bold text-base px-2 flex-col py-4 mb-5"
+	>
+		<div>
+			初めまして、<br />みらいマップ株式会社の徳永吉一です。<br />
+			多くの読者様が半信半疑と思いますが<br />「決算前の役員報酬増額」<br
+			/>
+			という節税対策は確かに存在します。<br />
+			もちろん税法上の<br />損金算入規定を遵守しつつ<br
+			/>適法に実行可能です。<br />
+		</div>
+		<div class="flex">
+			<div>
+				この戦略は、<br />単なる節税対策ではなく、<br
+				/>会社の利益をコントロールしつつ、<br
+				/>経営者･役員の手元資金を<br />最大化するための戦略です。
+			</div>
+			<div>
+				<Image src={person_02} width={80} alt="heart" />
+			</div>
+		</div>
+	</div>
+	<ContactButton />
+</div>

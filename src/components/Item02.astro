@@ -1,0 +1,84 @@
+---
+import { Image } from "astro:assets";
+import person02 from "../assets/person02.png";
+import sitaSankaku from "../assets/sitaSankaku.png";
+---
+
+<div class="bg-white text-xs pt-5 pb-8 px-1">
+	<div class="max-w-3xl mx-auto text-xs">
+		<div class="flex h-16 justify-center mb-5">
+			<span class="left-up-line"></span><span
+				class="flex items-center px-5 font-bold"
+				><span class="text-xl">革新的</span>な<span class="text-xl"
+					>決済対策</span
+				>がここにあります。</span
+			><span class="right-up-line"></span>
+		</div>
+		<div
+			class="relative bg-[#EFD4CE] rounded-3xl px-2 py-4 border-4 border-dashed border-black drop-shadow-md [text-shadow:_0_1px_0_rgb(0_0_0_/_20%)] font-bold flex flex-col pt-10 text-sm"
+		>
+			<div class="ml-8 mb-4 text-xl">ある会社敬愛者の独り言...</div>
+			<div class="flex flex-col gap-1">
+				<div>
+					<div
+						class="bg-white rounded-3xl py-4 w-[240px] text-center shadow-xl"
+					>
+						今年は大幅に利益が上がった。<br
+						/>役員報酬をもっと増やして<br />おくべきだった …。
+					</div>
+				</div>
+				<div class="flex justify-end">
+					<div
+						class="bg-white rounded-3xl py-4 w-[240px] text-center shadow-xl"
+					>
+						結局、交際費や消耗品費で<br
+						/>経費を増やして利益を減らし<br />節税するしかないのか
+						…。
+					</div>
+				</div>
+				<div class="flex justify-start">
+					<div>
+						<div
+							class="bg-white rounded-3xl py-4 w-[200px] text-center shadow-xl my-auto"
+						>
+							決算月に高額の<br />役員報酬増額(損金)を<br
+							/>したいが不可能だ …。
+						</div>
+					</div>
+					<div class="flex mx-auto">
+						<Image src={person02} alt="" width={80} class="" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<Image src={sitaSankaku} alt="" width={60} class="mx-auto my-6" />
+	<div class="font-bold flex flex-col justify-center items-center my-5">
+		<div class="text-sm mb-3">
+			私たちは最も効果的な解決策を提供できます。
+		</div>
+		<div class="text-lg text-center mb-3">
+			それは、決算前に役員報酬を増額し、<br />
+			全額を経費(損金)として計上する対策です。
+		</div>
+		<div class="text-center text-sm">
+			私たちがご提案するこの手法により、<br />
+			多くの経営者が最後の瞬間でも効率的な節税対策を<br />
+			実行できるようになりました。
+		</div>
+	</div>
+</div>
+
+<style>
+	.right-up-line {
+		width: 2px;
+		background: #d66361;
+		transform: rotate(35deg);
+	}
+	.left-up-line {
+		width: 2px;
+		background: #d66361;
+		transform: rotate(140deg);
+	}
+</style>
