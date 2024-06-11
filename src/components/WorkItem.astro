@@ -1,0 +1,30 @@
+---
+interface Props {
+	caseNo: number;
+	title1: string;
+	title2: string;
+	subtitle: string;
+	text: string;
+}
+
+const { caseNo, title1, title2, subtitle, text } = Astro.props;
+---
+
+<div class="flex flex-col gap-2 relative px-2">
+	<div class="absolute flex px-2 items-center">
+		<div class="text-2xl">CASE {caseNo}</div>
+		<div class="text-sm pl-3">
+			<span class="text-lg">{title1}</span>{title2}
+		</div>
+	</div>
+	<div class="bg-white rounded-lg mt-[18px] pt-6">
+		<div
+			class="underline decoration-[#F5ED00] decoration-4 text-base mb-5 text-center"
+		>
+			{subtitle}
+		</div>
+		<div class="px-5 pb-5 text-sm leading-5">
+			{text}
+		</div>
+	</div>
+</div>

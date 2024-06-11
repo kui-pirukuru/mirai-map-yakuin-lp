@@ -9,19 +9,28 @@ import money from "../assets/monery.png";
 import person_03 from "../assets/person_03.png";
 ---
 
-<div class="bg-[#947D68] text-xs pt-5 pb-8 px-2 text-white">
-	<div class="max-w-3xl mx-auto text-2xl font-bold text-center">
-		いまの対策に<br /><span class="text-5xl">『 満足 』</span><br
-		/>していますか？
+<div class="bg-[#947D68] text-xs pt-8 pb-8 px-2 text-white">
+	<div
+		class="max-w-3xl mx-auto text-2xl sm:text-4xl font-bold text-center sm:leading-10"
+	>
+		いまの対策に<br class="sm:hidden" /><span
+			class="text-5xl sm:text-5xl font-sans sm:px-1">『 満足 』</span
+		><br class="sm:hidden" />していますか？
 	</div>
-	<div class="max-w-3xl mx-auto text-base text-center my-5">
-		よくある例として<br />以下のような対策が挙げられます。<br />
-		皆様の会社でも、<br />上記の策に頼っていませんか？
+	<div
+		class="max-w-3xl mx-auto text-base sm:text-lg text-center my-5 sm:my-10"
+	>
+		よくある例として<br
+			class="sm:hidden"
+		/>以下のような対策が挙げられます。<br />
+		皆様の会社でも、<br class="sm:hidden" />上記の策に頼っていませんか？
 	</div>
-	<div class="flex flex-wrap gap-2 items-center justify-center">
-		<div class="text-base font-bold">
+	<div
+		class="flex flex-wrap gap-2 sm:gap-7 items-center justify-center text-base sm:text-lg font-bold sm:max-w-2xl mx-auto"
+	>
+		<div>
 			<div
-				class="border-white border-4 rounded-lg w-[170px] h-[140px] px-2 flex flex-col items-center justify-center gap-3"
+				class="border-white border-4 rounded-lg w-[170px] h-[140px] sm:w-[200px] px-2 flex flex-col items-center justify-center gap-3"
 			>
 				<div class="text-white text-center">
 					決算月の高級車両や<br />
@@ -32,9 +41,9 @@ import person_03 from "../assets/person_03.png";
 				</div>
 			</div>
 		</div>
-		<div class="text-base font-bold">
+		<div>
 			<div
-				class="border-white border-4 rounded-lg w-[170px] h-[140px] px-2 flex flex-col items-center justify-center gap-3"
+				class="border-white border-4 rounded-lg w-[170px] h-[140px] sm:w-[200px] px-2 flex flex-col items-center justify-center gap-3"
 			>
 				<div class="text-white text-center">オフィスの改装工事</div>
 				<div class="flex justify-center gap-4">
@@ -43,9 +52,9 @@ import person_03 from "../assets/person_03.png";
 				</div>
 			</div>
 		</div>
-		<div class="text-base font-bold">
+		<div>
 			<div
-				class="border-white border-4 rounded-lg w-[170px] h-[140px] px-2 flex flex-col items-center justify-center gap-3"
+				class="border-white border-4 rounded-lg w-[170px] h-[140px] sm:w-[200px] px-2 flex flex-col items-center justify-center gap-3"
 			>
 				<div class="text-white text-center">
 					全社員への<br />
@@ -56,9 +65,9 @@ import person_03 from "../assets/person_03.png";
 				</div>
 			</div>
 		</div>
-		<div class="text-base font-bold">
+		<div>
 			<div
-				class="border-white border-4 rounded-lg w-[170px] h-[140px] px-2 flex flex-col items-center justify-center gap-3"
+				class="border-white border-4 rounded-lg w-[170px] h-[140px] sm:w-[200px] px-2 flex flex-col items-center justify-center gap-3"
 			>
 				<div class="text-white text-center leading-5">
 					会社案内や<br />
@@ -70,7 +79,7 @@ import person_03 from "../assets/person_03.png";
 				</div>
 			</div>
 		</div>
-		<div class="text-base font-bold">
+		<div>
 			<div
 				class="border-white border-4 rounded-lg w-[170px] h-[140px] px-2 flex flex-col items-center justify-center gap-3"
 			>
@@ -85,13 +94,19 @@ import person_03 from "../assets/person_03.png";
 			</div>
 		</div>
 	</div>
-	<div class="flex mt-6">
-		<div class="font-bold text-sm">
+	<div class="flex mt-6 justify-center">
+		<div class="font-bold text-sm sm:text-xl">
 			これらの策は一見、<br />節税に貢献するかのように思えますが、<br />
 			実際にはコストパフォーマンスや<br />長期的な効果に疑問符がつきます。
 		</div>
 		<div>
-			<Image src={person_03} alt="" width={100} />
+			<Image src={person_03} alt="person_03" class="hidden" width={100} />
+			<Image
+				src={person_03}
+				alt="person_03"
+				class="hidden sm:block"
+				width={150}
+			/>
 		</div>
 	</div>
 </div>

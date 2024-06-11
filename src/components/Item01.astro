@@ -7,16 +7,27 @@ import image_01 from "../assets/image_01.png";
 	<div class="px-2 flex flex-col items-center">
 		<div class="flex flex-col">
 			<div class="flex items-center justify-center">
-				<div class="text-sm font-bold">
+				<div class="text-sm sm:text-xl font-bold">
 					<span class="text-[#DC4229]">決算対策でお悩みの</span><br
 					/>会社経営者･役員･ <br />ビジネスオーナーの<br />皆さんへ
 				</div>
 				<div>
-					<Image src={image_01} alt="説明文" height={130} class="" />
+					<Image
+						src={image_01}
+						alt="説明文"
+						height={130}
+						class="sm:hidden"
+					/>
+					<Image
+						src={image_01}
+						alt="説明文"
+						height={200}
+						class="hidden sm:block"
+					/>
 				</div>
 			</div>
 			<div
-				class="bg-[#d66361] text-white rounded-3xl px-5 py-4 border-4 border-black drop-shadow-md [text-shadow:_0_1px_0_rgb(0_0_0_/_20%)] font-bold text-2xl"
+				class="bg-[#d66361] text-white rounded-3xl px-5 py-4 border-4 border-black drop-shadow-md [text-shadow:_0_1px_0_rgb(0_0_0_/_20%)] font-bold text-2xl sm:text-4xl"
 			>
 				役員報酬(全額損金)を<br />
 				<span class="underline">決算前に</span>増額できました。

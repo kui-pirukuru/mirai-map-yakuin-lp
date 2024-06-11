@@ -21,6 +21,7 @@ import Item07 from "../components/Item07.astro";
 import Item08 from "../components/Item08.astro";
 import Item09 from "../components/Item09.astro";
 import Item10 from "../components/Item10.astro";
+import Question from "../components/Question.astro";
 import Aisatu from "../components/Aisatu.astro";
 import Voice from "../components/Voice.astro";
 import Akusyu from "../components/Akusyu.astro";
@@ -36,6 +37,7 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 <Layout title="社会保険料を効果的に節減 みらいマップ株式会社">
 	<main class="flex flex-col justify-center items-center w-full">
 		<div class="w-full pb-2">
+			<Header />
 			<Item01 />
 			<Item02 />
 			<Item03 />
@@ -44,9 +46,9 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 			<Item06 />
 			<Item07 />
 			<Item08 />
+			<Question />
 			<Item09 />
 			<Item10 />
-			<!-- <Header /> -->
 			<!-- <div class="h-[1200px] bg-[#EFD4CE] flex flex-col">
 				<div>
 					<div>ご利用いただいたお客さまの声</div>
@@ -114,47 +116,7 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 			<Dounyuu />
 			<div class="bg-white">
 				<div class="flex flex-col items-center">
-					<div class="md:w-[768px]">
-						<div
-							class="border-[5px] border-[#0588AF] rounded-md py-10 px-2 sm:px-10 mx-1 mb-10 bg-[#E9F6FD]"
-						>
-							<div
-								class="text-[#0088af] font-black text-center text-3xl"
-							>
-								よくあるご質問
-							</div>
-							<hr class="h-0.5 my-2 bg-[#0588AF]" />
-							<QuesionItem
-								question="この社会保険料節減策は合法ですか？"
-								anser="はい、当社の提案する節減策は完全合法です。日本年金機構や税務署もこの手法を認識していますので、法的な心配は不要です。"
-							/>
-							<QuesionItem
-								question="この節減策がプライバシーや企業の信用に影響を与えることはありませんか？"
-								anser="当社はお客様の情報を厳重に管理し、すべての業務を法律に則って行います。お客様の情報を外部に漏らすことはありませんので、企業の信用やブランドに悪影響を与えることはありません。"
-							/>
-							<QuesionItem
-								question="日本年金機構や税務署から調査があった場合、どう対応すれば良いですか？"
-								anser="当社の節減策は日本年金機構や税務署にも認知されているため、特別な対応は必要ありません。調査があっても全く問題にはなりません。"
-							/>
-							<QuesionItem
-								question="従業員にも節減策を導入できますか？"
-								anser="特定の条件を満たす従業員にも導入可能ですが、主には会社役員を対象とした節減策です。適用条件について詳しく知りたい場合はお問い合わせください。"
-							/>
-							<QuesionItem
-								question="会社を設立したばかりでも、この節減策を導入できますか？"
-								anser="会社設立後、社会保険の適用を申請すれば、その初年度から節減策を導入できます。"
-							/>
-							<QuesionItem
-								question="将来の厚生年金受給額はどう影響を受けますか？"
-								anser="本節減策を導入することで、将来の厚生年金受給額は減額される可能性があります。ただし、導入後の社会保険料節減額は厚生年金の減額分を大きく上回るため、結果的にはより多くの経済的利益を享受できます。"
-							/>
-							<QuesionItem
-								question="節減策の導入期間に制限はありますか？"
-								anser="いいえ、導入に制限や期限はありません。一度導入すれば、その効果は継続します。もし、以前の状態に戻したい場合は簡単に導入前に戻せます。"
-							/>
-						</div>
-					</div>
-				</div>
+					
 				<ContactButton />
 				<div
 					class="text-[#008F8F] text-center font-bold text-base sm:text-2xl py-14"
@@ -168,7 +130,7 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 					あなたのビジネスをサポートできるチャンスを、<br />
 					私たちは心から楽しみにしています。
 				</div>
-			</div>
+			</div>-->
 			<div class="bg-white">
 				<div class="flex flex-col items-center">
 					<Image
@@ -276,7 +238,7 @@ import offer_01_pc from "../assets/offer_01_pc.png";
 						class="md:hidden"
 					/>All rights reserved.
 				</div>
-			</div> -->
+			</div>
 		</div>
 	</main>
 

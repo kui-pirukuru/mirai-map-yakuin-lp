@@ -1,11 +1,5 @@
 ---
 import { Image } from "astro:assets";
-import heart from "../assets/heart.png";
-import car from "../assets/car.png";
-import kouji from "../assets/kouji.png";
-import scop from "../assets/scop.png";
-import doc from "../assets/doc.png";
-import money from "../assets/monery.png";
 import person_05 from "../assets/person_05.png";
 import ContactButton from "../components/ContactButton.astro";
 import MeritItem from "./MeritItem.astro";
@@ -16,7 +10,7 @@ import MeritItem from "./MeritItem.astro";
 		<span class="text-3xl">「役員報酬の増額」</span>には<br />
 		５つのメリットがあります
 	</div>
-	<div class="flex flex-col gap-2">
+	<div class="flex flex-col gap-2 sm:items-center">
 		<MeritItem
 			no={1}
 			title="全額の損金処理が可能"
@@ -43,25 +37,38 @@ import MeritItem from "./MeritItem.astro";
 			text="個別提案により、社会保険料の削減が見込める場合があります。"
 		/>
 	</div>
-	<div class="text-xl my-8">
-		<div>考慮すべきデメリットもあります。</div>
-		<div class="text-base">
-			役員報酬の増額により、個人の所得税および住民税が増加します。
+	<div
+		class="text-xl sm:text-3xl my-8 flex flex-col justify-center items-center"
+	>
+		<div>
+			<div>考慮すべきデメリットもあります。</div>
+			<div class="text-base sm:text-xl">
+				役員報酬の増額により、個人の所得税および住民税が増加します。
+			</div>
 		</div>
 	</div>
-	<div class="bg-white rounded-lg border-2 border-black p-5 mb-8">
-		<div class="text-3xl">法的根拠は？</div>
-		<div class="text-base mb-4bag">
-			役員報酬を増額し、<br />その額を損金算入することは、<br />
+	<div
+		class="bg-white rounded-lg border-2 border-black p-5 mb-8 sm:w-[650px] mx-auto"
+	>
+		<div class="text-3xl sm:text-4xl">法的根拠は？</div>
+		<div class="text-base sm:text-xl mb-4">
+			役員報酬を増額し、<br
+				class="sm:hidden"
+			/>その額を損金算入することは、<br />
 			国税庁の指針により可能です。<br />
 			<br />
 			この指針では、<br />
 			給与が「定期同額給与」<br
+				class="sm:hidden"
 			/>「事前確定届出給与」「業績連動給与」の<br />
-			いずれかに該当する場合、<br />損金に算入できるとされています。<br />
+			いずれかに該当する場合、<br
+				class="sm:hidden"
+			/>損金に算入できるとされています。<br />
 			<br />
 			私たちは、これらの基準に基づき、<br />
-			貴社に最適な役員報酬の<br />増額プランを提案します。
+			貴社に最適な役員報酬の<br
+				class="sm:hidden"
+			/>増額プランを提案します。
 		</div>
 		<div class="flex justify-center">
 			<Image src={person_05} width={200} alt="kouji" />

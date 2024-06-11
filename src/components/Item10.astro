@@ -1,23 +1,27 @@
 ---
 import { Image } from "astro:assets";
-import person_06 from "../assets/person_06.png";
 import person_07 from "../assets/person_07.png";
-import ContactButton from "./ContactButton.astro";
 ---
 
 <div class="bg-white text-xs pt-5 pb-8 px-2 font-bold">
-	<div class="flex px-3">
+	<div class="flex px-3 justify-center">
 		<!-- <div>
 			<Image src={person_06} alt="徳永吉一" class="mx-auto" width={60} />
 		</div> -->
-		<div>
-			<div class="text-center text-base">
-				ぜひ、みらいマップ株式会社へ<br />ご相談ください。<br />
-				私たちは皆様のビジネスが<br />直面する課題を共に解決し、<br />
-				一緒に次のステップへと<br />進む準備ができています。
+		<div class="flex flex-col items-center justify-center">
+			<div class="text-center text-base sm:text-lg">
+				ぜひ、みらいマップ株式会社へ<br
+					class="sm:hidden"
+				/>ご相談ください。<br />
+				私たちは皆様のビジネスが<br
+					class="sm:hidden"
+				/>直面する課題を共に解決し、<br />
+				一緒に次のステップへと<br
+					class="sm:hidden"
+				/>進む準備ができています。
 			</div>
-			<div class="text-center text-base my-6">
-				みらいマップ株式会社<br />代表取締役 徳永吉一
+			<div class="text-center text-base my-6 sm:my-3">
+				みらいマップ株式会社<br class="sm:hidden" />代表取締役 徳永吉一
 			</div>
 		</div>
 		<div class="flex items-center">

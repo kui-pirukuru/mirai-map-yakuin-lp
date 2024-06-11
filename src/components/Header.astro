@@ -1,19 +1,15 @@
 ---
-
 import { Image } from "astro:assets";
 import logo from "../assets/logo.png";
 import logo_sp from "../assets/logo_sp.png";
-import head_tel_sp from "../assets/head_tel_sp.png";
-import head_email_sp from "../assets/head_email_sp.png";
-import person01 from "../assets/person01.png";
+import head_tel_sp from "../assets/head_tel_sp.svg";
+import head_email_sp from "../assets/head_email_sp.svg";
 ---
 
-<div class="w-full bg-[#008f8f] pb-2">
-				
+<div class="bg-white pb-2">
 	<!-- 通常ヘッダー -->
 	<div class="flex justify-center items-center w-full">
-		<div class="justify-between hidden md:pt-4 md:flex md:w-[868px] ">
-			
+		<div class="justify-between hidden md:pt-4 md:flex md:w-[868px]">
 			<div class="flex items-center">
 				<Image
 					src={logo}
@@ -23,16 +19,12 @@ import person01 from "../assets/person01.png";
 					format="png"
 				/>
 			</div>
-			<div
-				class="flex text-black text-xs font-bold items-center mb-1.5"
-			>
+			<div class="flex text-black text-xs font-bold items-center mb-1.5">
 				ご相談は無料です<br />まずはお問い合わせください
 			</div>
 			<div class="font-black">
 				<div class="text-sm">お電話からご予約</div>
-				<div class="text-2xl h-[20px] leading-4">
-					☎ 082-507-3230
-				</div>
+				<div class="text-2xl h-[20px] leading-4">☎ 082-507-3230</div>
 				<div class="text-xs">
 					ご予約・お問い合わせ：平日 9:00～18:00
 				</div>
@@ -48,87 +40,17 @@ import person01 from "../assets/person01.png";
 			</div>
 		</div>
 	</div>
-	<!-- Top -->
-	<div
-		class="container mx-auto hidden md:flex justify-center my-5 bg-[#008f8f]"
-	>
-		<div class="flex flex-col">
-			<div
-				class="text-white font-bold text-xl md:text-2xl py-2 flex-none"
-			>
-				会社経営者様、社長・役員必見！
-			</div>
-			<div
-				class="flex justify-center mt-5 font-bold text-4xl text-white flex-col"
-			>
-				<div class="">社会保険料が</div>
-				<div class="font-black mb-2">年間最大<span class="text-[#FAFF00] text-6xl">60<span class="text-4xl">％</span></span>以上
-				</div>
-				<div class="mt-217">節減できます！</div>
-			</div>
-		</div>
-		<div class="flex items-end">
-			<Image
-				src={person01}
-				alt="説明文"
-				width={150}
-				quality={100}
-				format="png"
-			/>
-		</div>
-	</div>
+
 	<!-- モバイルヘッダー -->
-	<div
-		class="flex justify-between md:hidden px-5 pt-5 mb-5 bg-[#008f8f]"
-	>
-	<Image src={logo_sp} alt="説明文" 
-	width={190} class="sm:hidden"/>
-	<Image src={logo_sp} alt="説明文" 
-	width={290} class="hidden sm:flex"/>
+	<div class="flex justify-between md:hidden px-5 pt-5 mb-5 bg-white">
+		<Image src={logo_sp} alt="説明文" width={200} class="" />
 		<div class="flex">
 			<a href="tel:0825073230" class="p-2">
-				<Image src={head_tel_sp} alt="説明文" width="35" 
-				class="sm:hidden"/>
-				<Image src={head_tel_sp} alt="説明文" width="65" 
-				class="hidden sm:flex"/>
+				<Image src={head_tel_sp} alt="説明文" width={60} />
 			</a>
 			<a href="#contact" class="p-2 py-3">
-				<Image
-					src={head_email_sp}
-					alt="説明文"
-					width={35}
-					class="sm:hidden"
-				/>
-				<Image
-					src={head_email_sp}
-					alt="説明文"
-					class="hidden sm:flex"
-					width={65}
-				/>
+				<Image src={head_email_sp} alt="説明文" width={60} />
 			</a>
-		</div>
-	</div>
-	<!-- モバイルトップ -->
-	<div
-		class="container flex md:hidden flex-col items-center bg-[#008f8f]"
-	>
-		<div class="text-white font-bold text-xl sm:text-4xl px-3 py-2">
-			会社経営者様、社長・役員必見！
-		</div>
-		<div
-			class="flex justify-center mt-5 text-white font-bold text-3xl"
-		>
-			<div class="pb-5">
-				<div class="font-bold text-2xl sm:text-4xl">社会保険料が</div>
-				<div class="font-bold mb-2 text-2xl sm:text-4xl">年間最大<span class="text-[#FAFF00] text-4xl sm:text-6xl">60<span class="text-2xl sm:text-3xl">％</span></span
-					>以上
-				</div>
-				<div class="text-2xl sm:text-4xl sm:mt-6">節減できます！</div>
-			</div>
-			<div class="flex items-end">
-				<Image src={person01} alt="説明文" width={150} class="pl-2 hidden sm:flex" />
-				<Image src={person01} alt="説明文" width={120} class="pl-2 sm:hidden"/>
-			</div>
 		</div>
 	</div>
 </div>
