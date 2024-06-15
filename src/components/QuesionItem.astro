@@ -48,13 +48,13 @@ const { question, anser } = Astro.props;
 		</summary>
 		<div class="flex pb-2 text-secondary-500 gap-4 items-center">
 			<div class="text-[#0588AF] text-2xl font-bold pt-0.5">A</div>
-			<div class="font-sans">
+			<div class="font-sans text-left">
 				{anser}
 			</div>
 		</div>
 	</details>
-	<hr class="h-0.5 my-2 bg-[#0588AF]" />
 </div>
+<hr class="h-0.5 my-2 bg-[#0588AF] border-0" />
 
 <style>
 	summary::-webkit-details-marker {
