@@ -1,9 +1,9 @@
-// 親オブジェクトにposition relativeがかかっている場合、うまく動かなかも
+// 隕ｪ繧ｪ繝悶ず繧ｧ繧ｯ繝医↓position relative縺後°縺九▲縺ｦ縺�繧句ｴ蜷医√≧縺ｾ縺丞虚縺九↑縺九ｂ
 mfp.extend.event('elementError',
-	function(obj){
-		if(mfp.Ready){
+	function (obj) {
+		if (mfp.Ready) {
 			var ua = navigator.userAgent;
-			if(ua.indexOf('Mobile') > -1){
+			if (ua.indexOf('Mobile') > -1) {
 				mfp.scroll(obj.id);
 			};
 		};

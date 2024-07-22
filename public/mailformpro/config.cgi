@@ -9,7 +9,8 @@ $config{'ConfirmationMode'} = 0;
 $config{'sendmail'} = '/usr/sbin/sendmail';
 
 ## フォームの宛先
-push @mailto,'kui@develop-kui.com';
+#push @mailto,'kui@develop-kui.com';
+push @mailto,'info@mirai-map.jp';
 
 ## 管理者宛メールのCC・BCCの宛先
 #$config{'admin_cc'} = 'support@synck.com';
@@ -46,7 +47,7 @@ $config{'SerialBoost'} = 0;
 $config{'ThanksPage'} = '../thanks/index.html?no=%s';
 
 ## 設置者に届くメールの件名
-$config{'subject'} = '【社保LP2405】お問い合せフォームから[ %s ] ';
+$config{'subject'} = '【役員報酬LP2407】お問い合せフォームから[ %s ] ';
 
 ## 設置者に届くメールの本文整形
 $_TEXT{'posted'} = <<'__posted_body__';
